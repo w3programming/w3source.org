@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Aprenda a utilizar o método hasOwnProperty do JavaScript"/>
 <meta name="twitter:description" content="Neste breve tutorial para iniciantes, você aprenderá a usar o método JavaScript hasOwnProperty() de maneira simples e fácil."/>
-<meta name="robots" content="index, follow" /><link rel="stylesheet" href="/css/main.min.e453dee5d645e97cbcdaf83860822aac69b2e4c130f3f01f9c12eec700ed562c.css" integrity="sha256-5FPe5dZF6Xy82vg4YIIqrGmy5MEw8/AfnBLuxwDtViw=" crossorigin="anonymous"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&#43;Mono&amp;family=Roboto:wght@400;700&amp;display=swap" crossorigin="anonymous"><link rel="stylesheet" href="/css/viewer.min.3d228794bcedbbfa0412beb8fbc1ec6973202945e42af7004f742a4d7bd620ab.css" integrity="sha256-PSKHlLztu/oEEr64&#43;8HsaXMgKUXkKvcAT3QqTXvWIKs=" crossorigin="anonymous">
+<meta name="robots" content="index, follow" /><link rel="stylesheet" href="/css/main.min.e453dee5d645e97cbcdaf83860822aac69b2e4c130f3f01f9c12eec700ed562c.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&#43;Mono&amp;family=Roboto:wght@400;700&amp;display=swap" crossorigin="anonymous"><link rel="stylesheet" href="/css/viewer.min.3d228794bcedbbfa0412beb8fbc1ec6973202945e42af7004f742a4d7bd620ab.css" integrity="sha256-PSKHlLztu/oEEr64&#43;8HsaXMgKUXkKvcAT3QqTXvWIKs=" crossorigin="anonymous">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BWDXMYHME"></script>
 <script>
@@ -264,8 +264,8 @@
 </code></pre></div><p><strong>Saída:</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="m">0</span>
 </code></pre></div><p>Nos exemplos anteriores, todos os objetos herdam propriedades do objeto principal, o Object.</p>
-<h3 id="o-comando-in24071986-em-javascript">O comando &ldquo;IN24071986&rdquo; em JavaScript<a class="anchor ms-1" href="#o-comando-in24071986-em-javascript"><i class="fas fa-link"></i></a></h3>
-<p>Normalmente os programadores novatos em JavaScript usam o comando <strong>IN24071986</strong> para verificar se uma propriedade existe em um determinado objeto.</p>
+<h3 id="o-comando-in-em-javascript">O comando &ldquo;in&rdquo; em JavaScript<a class="anchor ms-1" href="#o-comando-in-em-javascript"><i class="fas fa-link"></i></a></h3>
+<p>Normalmente os programadores novatos em JavaScript usam o comando <strong>in</strong> para verificar se uma propriedade existe em um determinado objeto.</p>
 <p><strong>Exemplo:</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="kd">var</span> <span class="nx">car</span> <span class="o">=</span> <span class="p">{</span>
 <span class="ln"> 2</span>    <span class="s2">&#34;doors&#34;</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
@@ -280,7 +280,7 @@
 <span class="ln">11</span><span class="p">}</span>
 </code></pre></div><p><strong>Saída:</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">true</span>
-</code></pre></div><p>O problema é que o comando <strong>IN24071986</strong> é abrangente. Ele fará uma busca por todas as propriedades do objeto. As propriedades criadas pelo usuário e as propriedades herdadas do objeto superior são incluídas na checagem.</p>
+</code></pre></div><p>O problema é que o comando <strong>in</strong> é abrangente. Ele fará uma busca por todas as propriedades do objeto. As propriedades criadas pelo usuário e as propriedades herdadas do objeto superior são incluídas na checagem.</p>
 <p>Isso pode causar um erro de lógica se por acaso o programador executar um pedaço do código somente se uma propriedade do objeto existir.</p>
 <p>Mas o programador quer verificar uma propriedade padrão do objeto? Ou uma propriedade criada pelo usuário?</p>
 <p><strong>Exemplo:</strong></p>
@@ -297,7 +297,7 @@
 <span class="ln">11</span><span class="p">}</span>
 </code></pre></div><p><strong>Saída:</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">true</span>
-</code></pre></div><p>No exemplo anterior, o comando <strong>IN24071986</strong> retorna <strong>true</strong>, ou seja, ele considera que a propriedade <strong>toString</strong> existe no nosso objeto, mesmo que essa propriedade não tenha sido declarada por nós.</p>
+</code></pre></div><p>No exemplo anterior, o comando <strong>in</strong> retorna <strong>true</strong>, ou seja, ele considera que a propriedade <strong>toString</strong> existe no nosso objeto, mesmo que essa propriedade não tenha sido declarada por nós.</p>
 <p>A propriedade/método <strong>toString</strong> é herdade do objeto superior. Para evitar essa confusão sempre use o método <strong>hasOwnProperty</strong>.</p>
 <p><strong>Exemplo:</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="kd">var</span> <span class="nx">car</span> <span class="o">=</span> <span class="p">{</span>
@@ -332,7 +332,7 @@
     <li><a href="#por-que-é-importante-usar-o-método-hasownproperty"><strong>Por que é importante usar o método hasOwnProperty?</strong></a>
       <ul>
         <li><a href="#tudo-em-javascript-é-um-objeto"><strong>Tudo em JavaScript é um objeto.</strong></a></li>
-        <li><a href="#o-comando-in24071986-em-javascript"><strong>O comando &ldquo;IN24071986&rdquo; em JavaScript</strong></a></li>
+        <li><a href="#o-comando-in-em-javascript"><strong>O comando &ldquo;in&rdquo; em JavaScript</strong></a></li>
       </ul>
     </li>
   </ul>
@@ -382,7 +382,7 @@
 <small class="copyright mb-2">
   Copyright © 2021-2022 W3Empire. All Rights Reserved.
 </small></footer>
-<script src="/js/main.98d295a254794fd6905065bde62c9a66bff9496bbc970308fa83eac58ea1e334.js" integrity="sha256-mNKVolR5T9aQUGW95iyaZr/5SWu8lwMI&#43;oPqxY6h4zQ=" crossorigin="anonymous" defer></script><script src="/js/icons.min.a35670f2f90c398e5ee5c8e509b428fae75aa2746854cee10b60794633076859.js" integrity="sha256-o1Zw8vkMOY5e5cjlCbQo&#43;udaonRoVM7hC2B5RjMHaFk=" crossorigin="anonymous" defer></script>
+<script src="/js/main.98d295a254794fd6905065bde62c9a66bff9496bbc970308fa83eac58ea1e334.js" defer></script><script src="/js/icons.min.a35670f2f90c398e5ee5c8e509b428fae75aa2746854cee10b60794633076859.js" integrity="sha256-o1Zw8vkMOY5e5cjlCbQo&#43;udaonRoVM7hC2B5RjMHaFk=" crossorigin="anonymous" defer></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {

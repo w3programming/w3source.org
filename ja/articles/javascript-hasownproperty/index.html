@@ -12,7 +12,7 @@
 <meta name="description" content="初心者向けのこの短いチュートリアルでは、JavaScriptのhasOwnProperty（）メソッドを簡単かつ簡単に使用する方法を学習します。" /><meta itemprop="name" content="JavaScriptのhasOwnProperty（）メソッドの使用方法を学ぶ">
 <meta itemprop="description" content="初心者向けのこの短いチュートリアルでは、JavaScriptのhasOwnProperty（）メソッドを簡単かつ簡単に使用する方法を学習します。"><meta itemprop="datePublished" content="2022-02-25T00:00:00-03:00" />
 <meta itemprop="dateModified" content="2022-02-25T00:00:00-03:00" />
-<meta itemprop="wordCount" content="226">
+<meta itemprop="wordCount" content="1597">
 <meta itemprop="keywords" content="JavaScript," /><meta property="og:title" content="JavaScriptのhasOwnProperty（）メソッドの使用方法を学ぶ" />
 <meta property="og:description" content="初心者向けのこの短いチュートリアルでは、JavaScriptのhasOwnProperty（）メソッドを簡単かつ簡単に使用する方法を学習します。" />
 <meta property="og:type" content="article" />
@@ -69,7 +69,7 @@
 
 <div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSettings">
   <div class="offcanvas-header">
-    <h3 class="offcanvas-title">Settings</h3>
+    <h3 class="offcanvas-title">設定</h3>
     <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
       <i class="fas fa-times"></i>
     </button>
@@ -77,7 +77,7 @@
   <div class="offcanvas-body d-flex flex-column"><section class="setting">
   <form class="row">
     <div class="col-auto">
-      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-language"></i> Language</label>
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-language"></i> 言語</label>
     </div>
     <div class="col-auto ms-auto">
       <div class="dropdown">
@@ -94,7 +94,7 @@
 <section class="setting">
   <form class="row">
     <div class="col-auto">
-      <label><i class="fas fa-fw fa-adjust"></i> Mode</label>
+      <label><i class="fas fa-fw fa-adjust"></i> モード</label>
     </div>
     <div class="col-auto ms-auto">
       <div class="form-check form-switch">
@@ -107,7 +107,7 @@
 <section class="setting">
   <form class="font-size-switcher-form row">
     <div class="col-auto">
-      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> Font Size</label>
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> フォントサイズ</label>
     </div>
     <div class="col-auto ms-auto">
       <input type="range" class="form-range" min="-2" max="2" id="fontSize">
@@ -119,16 +119,16 @@
 
 <section class="setting actions d-flex justify-content-around mt-auto overflow-auto">
   <a role="button" class="action action-go-back" href="javascript: window.history.back();">
-    <span class="action-icon"><i class="fas fa-2x fa-arrow-left"></i></span> Go back
+    <span class="action-icon"><i class="fas fa-2x fa-arrow-left"></i></span> 戻る
   </a>
   <a role="button" class="action action-reload-page">
-    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> Reload
+    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> リロード
   </a>
   <a role="button" class="action action-copy-url">
-    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> Copy URL
+    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> URLをコピー
   </a><a class="action action-social-share" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSocialShare"
     aria-controls="offcanvasSocialShare" aria-label="Toggle social share">
-    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> Share
+    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> 共有
   </a></section>
 
 </div>
@@ -140,7 +140,7 @@
         <span class="btn btn-search disabled position-absolute left-0">
             <i class="fas fa-fw fa-search"></i>
         </span>
-        <input class="form-control rounded-pill" name="q" type="search" aria-label="Search" placeholder="Type and press &#39;Enter&#39; to search...">
+        <input class="form-control rounded-pill" name="q" type="search" aria-label="Search" placeholder="入力して「Enter」を押して検索します...">
     </div>
 </form>
       <ul class="navbar-nav ms-auto"></ul>
@@ -153,7 +153,7 @@
 <div class="col-lg-8">
   <div class="container"><nav class="row card component" aria-label="breadcrumb">
   <div class="card-body">
-    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="/ja/">Home</a></li><li class="breadcrumb-item"><a href="/ja/articles/">Articles</a></li><li class="breadcrumb-item active">JavaScriptのhasOwnProperty（）メソッドの使用方法を学ぶ</li></ol>
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="/ja/">ホームページ</a></li><li class="breadcrumb-item"><a href="/ja/articles/">Articles</a></li><li class="breadcrumb-item active">JavaScriptのhasOwnProperty（）メソッドの使用方法を学ぶ</li></ol>
   </div>
 </nav><div class="post-panel-wrapper">
   <div class="d-flex flex-column component rounded post-panel">
@@ -190,10 +190,10 @@
 </h1>
   </div>
   <div class="card-body"><div class="post-meta">
-  <span class="post-date" title="created on 2022-02-25 00:00:00 -0300 -03.">
+  <span class="post-date" title="で作成された 2022-02-25 00:00:00 -0300 -03.">
     2022年02月25日
   </span><span class="post-reading-time">
-    2 min read
+    4分読む
   </span><span class="post-taxonomies"></span>
 </div>
 <div class="post-content mb-3"><p>JavaScriptの<strong>hasOwnProperty</strong>メソッドは、特定のオブジェクトに特定のプロパティがあるかどうかを確認するために使用されます。</p>
@@ -324,7 +324,7 @@
     
     <div class="post-toc row mb-4 card component" id="postTOC">
   <div class="card-header">
-    <h2 class="card-title">Contents</h2>
+    <h2 class="card-title">コンテンツ</h2>
   </div>
   <div class="card-body">
     <nav id="TableOfContents">
@@ -340,7 +340,7 @@
   </div>
 </div><section class="recent-posts row card component">
   <div class="card-header">
-    <h2 class="card-title">Recent Posts</h2>
+    <h2 class="card-title">最近の投稿</h2>
   </div>
   <div class="card-body">
     <ul class="post-list"><li>
@@ -351,7 +351,7 @@
 </section><section class="tags-taxonomies row card component">
       <div class="card-header">
         <h2 class="card-title">
-          <a href="/ja/tags">Tags</a>
+          <a href="/ja/tags">タグ</a>
         </h2>
       </div>
       <div class="card-body">
@@ -364,19 +364,19 @@
 </aside>
 </div>
     </main><footer class="footer mt-auto py-3 text-center container"><ul class="nav justify-content-center footer-memu mb-3"><li class="nav-item"><li class="nav-item">
-      <a class="nav-link" href="https://support.w3source.org/en/institutional/about/" target="_blank" rel="noopener noreferrer">About Us
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/about/" target="_blank" rel="noopener noreferrer">私たちに関しては
 </a>
     </li></li><li class="nav-item"><li class="nav-item">
-      <a class="nav-link" href="https://support.w3source.org/en/institutional/terms/" target="_blank" rel="noopener noreferrer">Terms of Use
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/terms/" target="_blank" rel="noopener noreferrer">利用規約
 </a>
     </li></li><li class="nav-item"><li class="nav-item">
-      <a class="nav-link" href="https://support.w3source.org/en/institutional/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/privacy-policy/" target="_blank" rel="noopener noreferrer">プライバシーポリシー
 </a>
     </li></li><li class="nav-item"><li class="nav-item">
-      <a class="nav-link" href="https://support.w3source.org/en/institutional/cookie-policy/" target="_blank" rel="noopener noreferrer">Cookies Policy
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/cookie-policy/" target="_blank" rel="noopener noreferrer">クッキーポリシー
 </a>
     </li></li><li class="nav-item"><li class="nav-item">
-      <a class="nav-link" href="https://support.w3source.org/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener noreferrer">Affiliate Disclosure
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener noreferrer">アフィリエイト開示
 </a>
     </li></li></ul><nav class="social-links nav justify-content-center mb-2"></nav>
 <small class="copyright mb-2">

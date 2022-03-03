@@ -2,6 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/it/</loc>
+    <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="/pt-br/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="/ko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="/it/"
+                />
+  </url><url>
     <loc>/it/articles/</loc>
     <lastmod>2022-02-25T00:00:00-03:00</lastmod>
     <xhtml:link
@@ -214,59 +268,6 @@
                 href="/it/tags/"
                 />
   </url><url>
-    <loc>/it/</loc>
-    <lastmod>2022-02-25T00:00:00-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="/ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="/ko/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="/it/"
-                />
-  </url><url>
     <loc>/it/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -317,6 +318,58 @@
                 rel="alternate"
                 hreflang="it"
                 href="/it/categories/"
+                />
+  </url><url>
+    <loc>/it/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="/pt-br/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="/ja/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="/ko/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="/it/search/"
                 />
   </url><url>
     <loc>/it/series/</loc>

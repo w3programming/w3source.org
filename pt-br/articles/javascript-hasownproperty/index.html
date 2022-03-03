@@ -1,0 +1,398 @@
+<!doctype html><html lang="pt-br" data-palette="green"
+  >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aprenda a utilizar o método hasOwnProperty do JavaScript | W3Source</title><link rel="apple-touch-icon" href="/images/icons/icon-180x180.png" sizes="180x180">
+<link rel="icon" href="/images/icons/icon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/icons/icon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/images/icons/favicon.ico">
+<link rel="manifest" href="/pt-br/manifest.json">
+<meta name="keywords" content="" />
+<meta name="description" content="Neste breve tutorial para iniciantes, você aprenderá a usar o método JavaScript hasOwnProperty() de maneira simples e fácil." /><meta itemprop="name" content="Aprenda a utilizar o método hasOwnProperty do JavaScript">
+<meta itemprop="description" content="Neste breve tutorial para iniciantes, você aprenderá a usar o método JavaScript hasOwnProperty() de maneira simples e fácil."><meta itemprop="datePublished" content="2022-02-25T00:00:00-03:00" />
+<meta itemprop="dateModified" content="2022-02-25T00:00:00-03:00" />
+<meta itemprop="wordCount" content="610">
+<meta itemprop="keywords" content="JavaScript," /><meta property="og:title" content="Aprenda a utilizar o método hasOwnProperty do JavaScript" />
+<meta property="og:description" content="Neste breve tutorial para iniciantes, você aprenderá a usar o método JavaScript hasOwnProperty() de maneira simples e fácil." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/pt-br/articles/javascript-hasownproperty/" /><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2022-02-25T00:00:00-03:00" />
+<meta property="article:modified_time" content="2022-02-25T00:00:00-03:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Aprenda a utilizar o método hasOwnProperty do JavaScript"/>
+<meta name="twitter:description" content="Neste breve tutorial para iniciantes, você aprenderá a usar o método JavaScript hasOwnProperty() de maneira simples e fácil."/>
+<meta name="robots" content="index, follow" /><link rel="stylesheet" href="/css/main.min.e453dee5d645e97cbcdaf83860822aac69b2e4c130f3f01f9c12eec700ed562c.css" integrity="sha256-5FPe5dZF6Xy82vg4YIIqrGmy5MEw8/AfnBLuxwDtViw=" crossorigin="anonymous"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&#43;Mono&amp;family=Roboto:wght@400;700&amp;display=swap" crossorigin="anonymous"><link rel="stylesheet" href="/css/viewer.min.3d228794bcedbbfa0412beb8fbc1ec6973202945e42af7004f742a4d7bd620ab.css" integrity="sha256-PSKHlLztu/oEEr64&#43;8HsaXMgKUXkKvcAT3QqTXvWIKs=" crossorigin="anonymous">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BWDXMYHME"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    
+    gtag('config', 'G-1BWDXMYHME');
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script></head>
+  <body><script>const items=['mode','palette'];items.forEach(function(a){const b=localStorage.getItem('hbs-'+a);b&&document.body.parentElement.setAttribute('data-'+a,b)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" id="toggle-menu" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="/pt-br/"><img class="logo zoom-in-img" alt="Logo" src="/images/w3source.jpg" loading="lazy"  width="500" height="500"   />Source.Org
+    </a>
+    <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Share</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
+      target="_blank" href="https://twitter.com/intent/tweet?title=Aprenda%20a%20utilizar%20o%20m%c3%a9todo%20hasOwnProperty%20do%20JavaScript&url=%2fpt-br%2farticles%2fjavascript-hasownproperty%2f">
+      <i class="fab fa-fw fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=%2fpt-br%2farticles%2fjavascript-hasownproperty%2f">
+      <i class="fab fa-fw fa-facebook-f"></i> Facebook
+    </a>
+  </div>
+</div>
+    <button class="navbar-settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
+  aria-controls="offcanvasSettings" aria-label="Toggle settings">
+  <i class="fas fa-ellipsis-v"></i>
+</button>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSettings">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Configurações</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column"><section class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-language"></i> Idioma</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="dropdown">
+        <a class="btn btn-sm btn-outline-primary dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Português (Brasil)
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown"><li><a class="dropdown-item" href="/">English</a></li><li><a class="dropdown-item" href="/es/">Español</a></li><li><a class="dropdown-item" href="/zh-cn/">中文</a></li><li><a class="dropdown-item" href="/ru/">Pусский</a></li><li><a class="dropdown-item" href="/ja/">日本語</a></li><li><a class="dropdown-item" href="/de/">Deutsch</a></li><li><a class="dropdown-item" href="/ko/">한국어</a></li><li><a class="dropdown-item" href="/fr/">Français</a></li><li><a class="dropdown-item" href="/it/">Italiano</a></li></ul>
+      </div>
+    </div>
+  </form>
+</section>
+
+
+<section class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-adjust"></i> Modo</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="modeSwitcher">
+      </div>
+    </div>
+  </form>
+</section>
+
+<section class="setting">
+  <form class="font-size-switcher-form row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> Tamanho da fonte</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+    </div>
+  </form>
+</section>
+
+
+
+<section class="setting actions d-flex justify-content-around mt-auto overflow-auto">
+  <a role="button" class="action action-go-back" href="javascript: window.history.back();">
+    <span class="action-icon"><i class="fas fa-2x fa-arrow-left"></i></span> Voltar
+  </a>
+  <a role="button" class="action action-reload-page">
+    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> Recarregar
+  </a>
+  <a role="button" class="action action-copy-url">
+    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> Copiar URL
+  </a><a class="action action-social-share" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSocialShare"
+    aria-controls="offcanvasSocialShare" aria-label="Toggle social share">
+    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> Compartilhar
+  </a></section>
+
+</div>
+</div>
+
+    <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent" onclick="event.stopPropagation()">
+      <form class="search-bar my-1" action="/pt-br/search">
+    <div class="input-group input-group-sm">
+        <span class="btn btn-search disabled position-absolute left-0">
+            <i class="fas fa-fw fa-search"></i>
+        </span>
+        <input class="form-control rounded-pill" name="q" type="search" aria-label="Search" placeholder="Digite e pressione &#39;Enter&#39; para pesquisar...">
+    </div>
+</form>
+      <ul class="navbar-nav ms-auto"></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body">
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="/pt-br/">Ínicio</a></li><li class="breadcrumb-item"><a href="/pt-br/articles/">Articles</a></li><li class="breadcrumb-item active">Aprenda a utilizar o método hasOwnProperty do JavaScript</li></ol>
+  </div>
+</nav><div class="post-panel-wrapper">
+  <div class="d-flex flex-column component rounded post-panel">
+    
+    <a class="action action-panel-toggler" role="button" title="Panel toggler">
+      <i class="fas fa-fw fa-chevron-circle-down"></i>
+    </a>
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+  <div class="post-translations nav-item dropdown dropstart action">
+    <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" aria-label="Translations dropdown menu"
+      title="Translations">
+      <i class="fas fa-fw fa-language"></i>
+    </a>
+    <div class="dropdown-menu"><a class="dropdown-item post-translation" href="/articles/javascript-hasownproperty/">English</a><a class="dropdown-item post-translation" href="/es/articles/javascript-hasownproperty/">Español</a><a class="dropdown-item post-translation" href="/zh-cn/articles/javascript-hasownproperty/">中文</a><a class="dropdown-item post-translation" href="/ru/articles/javascript-hasownproperty/">Pусский</a><a class="dropdown-item post-translation" href="/ja/articles/javascript-hasownproperty/">日本語</a><a class="dropdown-item post-translation" href="/de/articles/javascript-hasownproperty/">Deutsch</a><a class="dropdown-item post-translation" href="/ko/articles/javascript-hasownproperty/">한국어</a><a class="dropdown-item post-translation" href="/fr/articles/javascript-hasownproperty/">Français</a><a class="dropdown-item post-translation" href="/it/articles/javascript-hasownproperty/">Italiano</a></div>
+  </div>
+
+
+    
+    
+    
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    
+  </div>
+</div>
+<article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title">Aprenda a utilizar o método hasOwnProperty do JavaScript
+</h1>
+  </div>
+  <div class="card-body"><div class="post-meta">
+  <span class="post-date" title="criado em 2022-02-25 00:00:00 -0300 -03.">
+    25/02/2022
+  </span><span class="post-reading-time">
+    3 min leitura
+  </span><span class="post-taxonomies"></span>
+</div>
+<div class="post-content mb-3"><p>O método <strong>hasOwnProperty</strong> do JavaScript é usado para verificar se um determinado objeto possui uma propriedade específica.</p>
+<p>A propriedade verificada pelo método <strong>hasOwnProperty</strong> é interna ao objeto em questão, ou seja, ela deve ter sido definida pelo usuário.</p>
+<p>Se a propriedade passada para o <strong>hasOwnProperty</strong> existir no objeto, o método retorna <strong>true</strong>, do contrário, retorna <strong>false</strong>.</p>
+<p><strong>Exemplo 1:</strong></p>
+<p>Nesse exemplo, nós criamos o objeto <strong>person</strong> e adicionamos a propriedade <strong>name</strong>, logo em seguida, usamos o <strong>hasOwnProperty</strong> para verificar se essa propriedade faz parte do nosso objeto.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kd">var</span> <span class="nx">person</span> <span class="o">=</span> <span class="p">{</span>
+<span class="ln">2</span>    <span class="s2">&#34;name&#34;</span><span class="o">:</span> <span class="s2">&#34;Brian&#34;</span><span class="p">,</span>
+<span class="ln">3</span>    <span class="s2">&#34;lastName&#34;</span><span class="o">:</span> <span class="s2">&#34;Scott&#34;</span>
+<span class="ln">4</span><span class="p">};</span>
+<span class="ln">5</span>
+<span class="ln">6</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">person</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s2">&#34;name&#34;</span><span class="p">)</span> <span class="p">);</span>
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">true</span>
+</code></pre></div><p><strong>Exemplo 2:</strong></p>
+<p>Nesse exemplo, vamos declarar um objeto com o nome <strong>car</strong> e atribuir uma propriedade a ele chamada <strong>doors</strong>, assim podemos usar o <strong>hasOwnProperty</strong> para verificar essa propriedade.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kd">var</span> <span class="nx">car</span> <span class="o">=</span> <span class="p">{</span>
+<span class="ln">2</span>    <span class="s2">&#34;doors&#34;</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span>
+<span class="ln">3</span>    <span class="s2">&#34;engine&#34;</span><span class="o">:</span> <span class="mf">2.0</span><span class="p">,</span>
+<span class="ln">4</span>    <span class="s2">&#34;color&#34;</span><span class="o">:</span> <span class="s2">&#34;black&#34;</span>
+<span class="ln">5</span><span class="p">};</span>
+<span class="ln">6</span>
+<span class="ln">7</span><span class="kd">var</span> <span class="nx">hasDoor</span> <span class="o">=</span> <span class="nx">car</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s2">&#34;doors&#34;</span><span class="p">);</span>
+<span class="ln">8</span>
+<span class="ln">9</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hasDoor</span><span class="p">);</span>
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">true</span>
+</code></pre></div><p><strong>Exemplo 3:</strong></p>
+<p>Aqui nós vamos, propositalmente, errar o nome da propriedade do nosso objeto para que o método <strong>hasOwnProperty</strong> retorne <strong>false</strong>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kd">var</span> <span class="nx">shoppingCart</span> <span class="o">=</span> <span class="p">{</span>
+<span class="ln">2</span>    <span class="s2">&#34;fruits&#34;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+<span class="ln">3</span>    <span class="s2">&#34;bread&#34;</span><span class="o">:</span> <span class="kc">false</span>
+<span class="ln">4</span><span class="p">};</span>
+<span class="ln">5</span>
+<span class="ln">6</span><span class="kd">var</span> <span class="nx">hasFruits</span> <span class="o">=</span> <span class="nx">shoppingCart</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s2">&#34;fruites&#34;</span><span class="p">);</span>
+<span class="ln">7</span>
+<span class="ln">8</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hasFruits</span><span class="p">);</span>
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">false</span>
+</code></pre></div><h2 id="por-que-é-importante-usar-o-método-hasownproperty">Por que é importante usar o método hasOwnProperty?<a class="anchor ms-1" href="#por-que-é-importante-usar-o-método-hasownproperty"><i class="fas fa-link"></i></a></h2>
+<p>Vamos analisar a importância de usar o método <strong>hasOwnProperty</strong> para verificar se uma propriedade existe dentro de um objeto em JavaScript.</p>
+<h3 id="tudo-em-javascript-é-um-objeto">Tudo em JavaScript é um objeto.<a class="anchor ms-1" href="#tudo-em-javascript-é-um-objeto"><i class="fas fa-link"></i></a></h3>
+<p>Isso mesmo, qualquer elemento criado no JavaScript é considerado um objeto. Números, Strings de texto, Arrays e qualquer outro tipo de dado do JavaScript herda propriedades de um objeto superior.</p>
+<p><strong>Exemplo 1:</strong></p>
+<p>O tipo de dado numérico em JavaScript é considerado um objeto.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="mf">10.22333</span><span class="p">;</span>
+<span class="ln">2</span><span class="kd">var</span> <span class="nx">otherNumber</span> <span class="o">=</span> <span class="nx">number</span><span class="p">.</span><span class="nx">toPrecision</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="ln">3</span>
+<span class="ln">4</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">otherNumber</span><span class="p">);</span>
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>10.2
+</code></pre></div><p><strong>Exemplo 2:</strong></p>
+<p>O tipo de dado string, também é considerado um objeto.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;Peter Max&#34;</span><span class="p">;</span>
+<span class="ln">2</span><span class="kd">var</span> <span class="kr">char</span> <span class="o">=</span> <span class="nx">name</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="ln">3</span>
+<span class="ln">4</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kr">char</span><span class="p">);</span>
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>t
+</code></pre></div><p><strong>Exemplo 3:</strong></p>
+<p>Até arrays em JavaScript são objetos.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kd">var</span> <span class="nx">cars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;BMW&#34;</span><span class="p">,</span> <span class="s2">&#34;Audi&#34;</span><span class="p">,</span> <span class="s2">&#34;Aston Martin&#34;</span><span class="p">];</span>
+<span class="ln">2</span>
+<span class="ln">3</span><span class="kd">var</span> <span class="nx">carIndexNumber</span> <span class="o">=</span> <span class="nx">cars</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&#34;BMW&#34;</span><span class="p">);</span>
+<span class="ln">4</span>
+<span class="ln">5</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">carIndexNumber</span><span class="p">);</span>
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="m">0</span>
+</code></pre></div><p>Nos exemplos anteriores, todos os objetos herdam propriedades do objeto principal, o Object.</p>
+<h3 id="o-comando-in24071986-em-javascript">O comando &ldquo;IN24071986&rdquo; em JavaScript<a class="anchor ms-1" href="#o-comando-in24071986-em-javascript"><i class="fas fa-link"></i></a></h3>
+<p>Normalmente os programadores novatos em JavaScript usam o comando <strong>IN24071986</strong> para verificar se uma propriedade existe em um determinado objeto.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="kd">var</span> <span class="nx">car</span> <span class="o">=</span> <span class="p">{</span>
+<span class="ln"> 2</span>    <span class="s2">&#34;doors&#34;</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+<span class="ln"> 3</span>    <span class="s2">&#34;engine&#34;</span><span class="o">:</span> <span class="mf">1.2</span><span class="p">,</span>
+<span class="ln"> 4</span>    <span class="s2">&#34;color&#34;</span><span class="o">:</span> <span class="s2">&#34;yellow&#34;</span>
+<span class="ln"> 5</span><span class="p">};</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="k">if</span> <span class="p">(</span><span class="s2">&#34;engine&#34;</span> <span class="k">in</span> <span class="nx">car</span><span class="p">)</span> <span class="p">{</span>
+<span class="ln"> 8</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;true&#34;</span><span class="p">);</span>
+<span class="ln"> 9</span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="ln">10</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;false&#34;</span><span class="p">);</span>
+<span class="ln">11</span><span class="p">}</span>
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">true</span>
+</code></pre></div><p>O problema é que o comando <strong>IN24071986</strong> é abrangente. Ele fará uma busca por todas as propriedades do objeto. As propriedades criadas pelo usuário e as propriedades herdadas do objeto superior são incluídas na checagem.</p>
+<p>Isso pode causar um erro de lógica se por acaso o programador executar um pedaço do código somente se uma propriedade do objeto existir.</p>
+<p>Mas o programador quer verificar uma propriedade padrão do objeto? Ou uma propriedade criada pelo usuário?</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="kd">var</span> <span class="nx">car</span> <span class="o">=</span> <span class="p">{</span>
+<span class="ln"> 2</span>    <span class="s2">&#34;doors&#34;</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+<span class="ln"> 3</span>    <span class="s2">&#34;engine&#34;</span><span class="o">:</span> <span class="mf">1.2</span><span class="p">,</span>
+<span class="ln"> 4</span>    <span class="s2">&#34;color&#34;</span><span class="o">:</span> <span class="s2">&#34;yellow&#34;</span>
+<span class="ln"> 5</span><span class="p">};</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="k">if</span> <span class="p">(</span><span class="s2">&#34;toString&#34;</span> <span class="k">in</span> <span class="nx">car</span><span class="p">)</span> <span class="p">{</span>
+<span class="ln"> 8</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;true&#34;</span><span class="p">);</span>
+<span class="ln"> 9</span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="ln">10</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;false&#34;</span><span class="p">);</span>
+<span class="ln">11</span><span class="p">}</span>
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">true</span>
+</code></pre></div><p>No exemplo anterior, o comando <strong>IN24071986</strong> retorna <strong>true</strong>, ou seja, ele considera que a propriedade <strong>toString</strong> existe no nosso objeto, mesmo que essa propriedade não tenha sido declarada por nós.</p>
+<p>A propriedade/método <strong>toString</strong> é herdade do objeto superior. Para evitar essa confusão sempre use o método <strong>hasOwnProperty</strong>.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln"> 1</span><span class="kd">var</span> <span class="nx">car</span> <span class="o">=</span> <span class="p">{</span>
+<span class="ln"> 2</span>    <span class="s2">&#34;doors&#34;</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+<span class="ln"> 3</span>    <span class="s2">&#34;engine&#34;</span><span class="o">:</span> <span class="mf">1.2</span><span class="p">,</span>
+<span class="ln"> 4</span>    <span class="s2">&#34;color&#34;</span><span class="o">:</span> <span class="s2">&#34;yellow&#34;</span>
+<span class="ln"> 5</span><span class="p">};</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="k">if</span> <span class="p">(</span> <span class="nx">car</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s2">&#34;toString&#34;</span><span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+<span class="ln"> 8</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;true&#34;</span><span class="p">);</span>
+<span class="ln"> 9</span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="ln">10</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;false&#34;</span><span class="p">);</span>
+<span class="ln">11</span><span class="p">}</span>
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">false</span>
+</code></pre></div><p>Agora o retorno foi o valor <strong>false</strong>. Isso porque, como vimos anteriormente, o método <strong>hasOwnProperty</strong>, somente pesquisa as propriedades definidas pelo usuário.</p>
+</div><div class="post-meta mt-50">
+  <span class="post-taxonomies"><a href="/pt-br/tags/javascript/" class="badge post-taxonomy">JavaScript</a></span>
+</div></div>
+  <div class="card-footer"></div>
+</article></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container d-flex flex-column">
+    
+    <div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">Conteúdo</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#por-que-é-importante-usar-o-método-hasownproperty"><strong>Por que é importante usar o método hasOwnProperty?</strong></a>
+      <ul>
+        <li><a href="#tudo-em-javascript-é-um-objeto"><strong>Tudo em JavaScript é um objeto.</strong></a></li>
+        <li><a href="#o-comando-in24071986-em-javascript"><strong>O comando &ldquo;IN24071986&rdquo; em JavaScript</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div><section class="recent-posts row card component">
+  <div class="card-header">
+    <h2 class="card-title">Postagens recentes</h2>
+  </div>
+  <div class="card-body">
+    <ul class="post-list"><li>
+        <a href="/pt-br/articles/javascript-hasownproperty/">Aprenda a utilizar o método hasOwnProperty do JavaScript
+</a>
+      </li></ul>
+  </div>
+</section><section class="tags-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/pt-br/tags">Tags</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/pt-br/tags/javascript/" class="badge rounded post-taxonomy" title="JavaScript">
+            JavaScript<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section>
+    
+  </div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><ul class="nav justify-content-center footer-memu mb-3"><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/about/" target="_blank" rel="noopener noreferrer">About Us
+</a>
+    </li></li><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/terms/" target="_blank" rel="noopener noreferrer">Terms of Use
+</a>
+    </li></li><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy
+</a>
+    </li></li><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/cookie-policy/" target="_blank" rel="noopener noreferrer">Cookies Policy
+</a>
+    </li></li><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener noreferrer">Affiliate Disclosure
+</a>
+    </li></li></ul><nav class="social-links nav justify-content-center mb-2"></nav>
+<small class="copyright mb-2">
+  Copyright © 2021-2022 W3Empire. All Rights Reserved.
+</small></footer>
+<script src="/js/main.98d295a254794fd6905065bde62c9a66bff9496bbc970308fa83eac58ea1e334.js" integrity="sha256-mNKVolR5T9aQUGW95iyaZr/5SWu8lwMI&#43;oPqxY6h4zQ=" crossorigin="anonymous" defer></script><script src="/js/icons.min.a35670f2f90c398e5ee5c8e509b428fae75aa2746854cee10b60794633076859.js" integrity="sha256-o1Zw8vkMOY5e5cjlCbQo&#43;udaonRoVM7hC2B5RjMHaFk=" crossorigin="anonymous" defer></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('\/service-worker.js').then(function(reg) {
+      console.log('Successfully registered service worker', reg);
+    }).catch(function(err) {
+      console.warn('Error whilst registering service worker', err);
+    });
+  });
+}
+</script><script src="/js/viewer.min.33f769b3bb2415045aecd0ae9bc8196997beaaabf70c9f8bf301d28851d95740.js" integrity="sha256-M/dps7skFQRa7NCum8gZaZe&#43;qqv3DJ&#43;L8wHSiFHZV0A=" crossorigin="anonymous" defer></script>
+</body>
+</html>

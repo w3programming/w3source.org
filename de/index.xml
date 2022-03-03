@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>W3Source</title>
+    <link>/de/</link>
+    <description>Recent content on W3Source</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2021-{year} W3Empire. All Rights Reserved.</copyright>
+    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 -0300</lastBuildDate><atom:link href="/de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Erfahren Sie, wie Sie die hasOwnProperty()-Methode von JavaScript verwenden</title>
+      <link>/de/articles/javascript-hasownproperty/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 -0300</pubDate>
+      
+      <guid>/de/articles/javascript-hasownproperty/</guid>
+      <description>In diesem kurzen Tutorial für Anfänger lernen Sie, wie Sie die JavaScript-Methode hasOwnProperty() auf einfache und einfache Weise verwenden.</description>
+    </item>
+    
+  </channel>
+</rss>

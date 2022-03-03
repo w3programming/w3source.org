@@ -1,23 +1,74 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>/categories/</loc>
-  </url><url>
-    <loc>/categories/javascript-tutorial/</loc>
-  </url><url>
-    <loc>/javascript-tutorial/</loc>
-  </url><url>
-    <loc>/categories/perl-tutorial/</loc>
-  </url><url>
-    <loc>/search/</loc>
-  </url><url>
-    <loc>/series/</loc>
-  </url><url>
-    <loc>/tags/</loc>
-  </url><url>
-    <loc>/</loc>
-  </url><url>
-    <loc>/tags/programming/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>/en/sitemap.xml</loc>
+    
+      <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>/pt-br/sitemap.xml</loc>
+    
+      <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>/es/sitemap.xml</loc>
+    
+      <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>/zh-cn/sitemap.xml</loc>
+    
+      <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>/ru/sitemap.xml</loc>
+    
+      <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>/ja/sitemap.xml</loc>
+    
+      <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>/de/sitemap.xml</loc>
+    
+      <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>/ko/sitemap.xml</loc>
+    
+      <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>/fr/sitemap.xml</loc>
+    
+      <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>/it/sitemap.xml</loc>
+    
+      <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    
+  </sitemap>
+  
+</sitemapindex>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on W3Source</title>
+    <link>/ja/articles/</link>
+    <description>Recent content in Articles on W3Source</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2021-{year} W3Empire. All Rights Reserved.</copyright>
+    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 -0300</lastBuildDate><atom:link href="/ja/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScriptのhasOwnProperty（）メソッドの使用方法を学ぶ</title>
+      <link>/ja/articles/javascript-hasownproperty/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 -0300</pubDate>
+      
+      <guid>/ja/articles/javascript-hasownproperty/</guid>
+      <description>初心者向けのこの短いチュートリアルでは、JavaScriptのhasOwnProperty（）メソッドを簡単かつ簡単に使用する方法を学習します。</description>
+    </item>
+    
+  </channel>
+</rss>

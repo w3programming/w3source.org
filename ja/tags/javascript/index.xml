@@ -2,18 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript on W3Source</title>
-    <link>/ja/tags/javascript/</link>
+    <link>https://w3source.org/ja/tags/javascript/</link>
     <description>Recent content in JavaScript on W3Source</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2021-{year} W3Empire. All Rights Reserved.</copyright>
-    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 -0300</lastBuildDate><atom:link href="/ja/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Mar 2022 00:00:00 -0300</lastBuildDate><atom:link href="https://w3source.org/ja/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jQueryに「exists」関数はありますか？（HTML要素は存在しますか？）</title>
+      <link>https://w3source.org/ja/articles/is-there-an-exists-function-for-jquery/</link>
+      <pubDate>Thu, 03 Mar 2022 00:00:00 -0300</pubDate>
+      
+      <guid>https://w3source.org/ja/articles/is-there-an-exists-function-for-jquery/</guid>
+      <description>jQueryを使用して、可能な限り最速かつ最も簡単な方法で要素がHTMLページに存在するかどうかを確認する方法を学びます。</description>
+    </item>
+    
     <item>
       <title>JavaScriptのhasOwnProperty（）メソッドの使用方法を学ぶ</title>
-      <link>/ja/articles/javascript-hasownproperty/</link>
+      <link>https://w3source.org/ja/articles/javascript-hasownproperty/</link>
       <pubDate>Fri, 25 Feb 2022 00:00:00 -0300</pubDate>
       
-      <guid>/ja/articles/javascript-hasownproperty/</guid>
+      <guid>https://w3source.org/ja/articles/javascript-hasownproperty/</guid>
       <description>初心者向けのこの短いチュートリアルでは、JavaScriptのhasOwnProperty（）メソッドを簡単かつ簡単に使用する方法を学習します。</description>
     </item>
     

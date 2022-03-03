@@ -1,0 +1,345 @@
+<!doctype html><html lang="ko" data-palette="green"
+  >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery에 &#39;exists&#39; 기능이 있습니까? (HTML 요소가 존재합니까?) | W3Source</title><link rel="apple-touch-icon" href="https://w3source.org/images/icons/icon-180x180.png" sizes="180x180">
+<link rel="icon" href="https://w3source.org/images/icons/icon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://w3source.org/images/icons/icon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://w3source.org/images/icons/favicon.ico">
+<link rel="manifest" href="https://w3source.org/ko/manifest.json">
+<meta name="keywords" content="" />
+<meta name="description" content="가능한 가장 빠르고 간단한 방법으로 jQuery를 사용하여 HTML 페이지에 요소가 있는지 확인하는 방법을 알아봅니다." /><meta itemprop="name" content="jQuery에 &#39;exists&#39; 기능이 있습니까? (HTML 요소가 존재합니까?)">
+<meta itemprop="description" content="가능한 가장 빠르고 간단한 방법으로 jQuery를 사용하여 HTML 페이지에 요소가 있는지 확인하는 방법을 알아봅니다."><meta itemprop="datePublished" content="2022-03-03T00:00:00-03:00" />
+<meta itemprop="dateModified" content="2022-03-03T00:00:00-03:00" />
+<meta itemprop="wordCount" content="862">
+<meta itemprop="keywords" content="JavaScript,jQuery," /><meta property="og:title" content="jQuery에 &#39;exists&#39; 기능이 있습니까? (HTML 요소가 존재합니까?)" />
+<meta property="og:description" content="가능한 가장 빠르고 간단한 방법으로 jQuery를 사용하여 HTML 페이지에 요소가 있는지 확인하는 방법을 알아봅니다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://w3source.org/ko/articles/is-there-an-exists-function-for-jquery/" /><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2022-03-03T00:00:00-03:00" />
+<meta property="article:modified_time" content="2022-03-03T00:00:00-03:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="jQuery에 &#39;exists&#39; 기능이 있습니까? (HTML 요소가 존재합니까?)"/>
+<meta name="twitter:description" content="가능한 가장 빠르고 간단한 방법으로 jQuery를 사용하여 HTML 페이지에 요소가 있는지 확인하는 방법을 알아봅니다."/>
+<meta name="robots" content="index, follow" /><link rel="stylesheet" href="https://w3source.org/css/main.min.e453dee5d645e97cbcdaf83860822aac69b2e4c130f3f01f9c12eec700ed562c.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&#43;Mono&amp;family=Roboto:wght@400;700&amp;display=swap" crossorigin="anonymous"><link rel="stylesheet" href="https://w3source.org/css/viewer.min.3d228794bcedbbfa0412beb8fbc1ec6973202945e42af7004f742a4d7bd620ab.css" integrity="sha256-PSKHlLztu/oEEr64&#43;8HsaXMgKUXkKvcAT3QqTXvWIKs=" crossorigin="anonymous">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BWDXMYHME"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    
+    gtag('config', 'G-1BWDXMYHME');
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script></head>
+  <body><script>const items=['mode','palette'];items.forEach(function(a){const b=localStorage.getItem('hbs-'+a);b&&document.body.parentElement.setAttribute('data-'+a,b)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" id="toggle-menu" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="https://w3source.org/ko/"><img class="logo zoom-in-img" alt="Logo" src="https://w3source.org/images/w3source.jpg" loading="lazy"  width="500" height="500"   />Source.Org
+    </a>
+    <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Share</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
+      target="_blank" href="https://twitter.com/intent/tweet?title=jQuery%ec%97%90%20%27exists%27%20%ea%b8%b0%eb%8a%a5%ec%9d%b4%20%ec%9e%88%ec%8a%b5%eb%8b%88%ea%b9%8c%3f%20%28HTML%20%ec%9a%94%ec%86%8c%ea%b0%80%20%ec%a1%b4%ec%9e%ac%ed%95%a9%eb%8b%88%ea%b9%8c%3f%29&url=https%3a%2f%2fw3source.org%2fko%2farticles%2fis-there-an-exists-function-for-jquery%2f">
+      <i class="fab fa-fw fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fw3source.org%2fko%2farticles%2fis-there-an-exists-function-for-jquery%2f">
+      <i class="fab fa-fw fa-facebook-f"></i> Facebook
+    </a>
+  </div>
+</div>
+    <button class="navbar-settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
+  aria-controls="offcanvasSettings" aria-label="Toggle settings">
+  <i class="fas fa-ellipsis-v"></i>
+</button>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSettings">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">설정</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column"><section class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-language"></i> 언어</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="dropdown">
+        <a class="btn btn-sm btn-outline-primary dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          한국어
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown"><li><a class="dropdown-item" href="https://w3source.org/">English</a></li><li><a class="dropdown-item" href="https://w3source.org/pt-br/">Português (Brasil)</a></li><li><a class="dropdown-item" href="https://w3source.org/es/">Español</a></li><li><a class="dropdown-item" href="https://w3source.org/zh-cn/">中文</a></li><li><a class="dropdown-item" href="https://w3source.org/ru/">Pусский</a></li><li><a class="dropdown-item" href="https://w3source.org/ja/">日本語</a></li><li><a class="dropdown-item" href="https://w3source.org/de/">Deutsch</a></li><li><a class="dropdown-item" href="https://w3source.org/fr/">Français</a></li><li><a class="dropdown-item" href="https://w3source.org/it/">Italiano</a></li></ul>
+      </div>
+    </div>
+  </form>
+</section>
+
+
+<section class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-adjust"></i> 방법</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="modeSwitcher">
+      </div>
+    </div>
+  </form>
+</section>
+
+<section class="setting">
+  <form class="font-size-switcher-form row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> 글꼴 크기</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+    </div>
+  </form>
+</section>
+
+
+
+<section class="setting actions d-flex justify-content-around mt-auto overflow-auto">
+  <a role="button" class="action action-go-back" href="javascript: window.history.back();">
+    <span class="action-icon"><i class="fas fa-2x fa-arrow-left"></i></span> 돌아가기
+  </a>
+  <a role="button" class="action action-reload-page">
+    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> 새로고침
+  </a>
+  <a role="button" class="action action-copy-url">
+    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> URL 복사
+  </a><a class="action action-social-share" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSocialShare"
+    aria-controls="offcanvasSocialShare" aria-label="Toggle social share">
+    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> 공유하다
+  </a></section>
+
+</div>
+</div>
+
+    <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent" onclick="event.stopPropagation()">
+      <form class="search-bar my-1" action="https://w3source.org/ko/search">
+    <div class="input-group input-group-sm">
+        <span class="btn btn-search disabled position-absolute left-0">
+            <i class="fas fa-fw fa-search"></i>
+        </span>
+        <input class="form-control rounded-pill" name="q" type="search" aria-label="Search" placeholder="입력하고 &#39;Enter&#39;를 눌러 검색...">
+    </div>
+</form>
+      <ul class="navbar-nav ms-auto"></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body">
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="https://w3source.org/ko/">홈페이지</a></li><li class="breadcrumb-item"><a href="https://w3source.org/ko/articles/">Articles</a></li><li class="breadcrumb-item active">jQuery에 &#39;exists&#39; 기능이 있습니까? (HTML 요소가 존재합니까?)</li></ol>
+  </div>
+</nav><div class="post-panel-wrapper">
+  <div class="d-flex flex-column component rounded post-panel">
+    
+    <a class="action action-panel-toggler" role="button" title="Panel toggler">
+      <i class="fas fa-fw fa-chevron-circle-down"></i>
+    </a>
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+  <div class="post-translations nav-item dropdown dropstart action">
+    <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" aria-label="Translations dropdown menu"
+      title="Translations">
+      <i class="fas fa-fw fa-language"></i>
+    </a>
+    <div class="dropdown-menu"><a class="dropdown-item post-translation" href="https://w3source.org/articles/is-there-an-exists-function-for-jquery/">English</a><a class="dropdown-item post-translation" href="https://w3source.org/pt-br/articles/is-there-an-exists-function-for-jquery/">Português (Brasil)</a><a class="dropdown-item post-translation" href="https://w3source.org/es/articles/is-there-an-exists-function-for-jquery/">Español</a><a class="dropdown-item post-translation" href="https://w3source.org/zh-cn/articles/is-there-an-exists-function-for-jquery/">中文</a><a class="dropdown-item post-translation" href="https://w3source.org/ru/articles/is-there-an-exists-function-for-jquery/">Pусский</a><a class="dropdown-item post-translation" href="https://w3source.org/ja/articles/is-there-an-exists-function-for-jquery/">日本語</a><a class="dropdown-item post-translation" href="https://w3source.org/de/articles/is-there-an-exists-function-for-jquery/">Deutsch</a><a class="dropdown-item post-translation" href="https://w3source.org/fr/articles/is-there-an-exists-function-for-jquery/">Français</a><a class="dropdown-item post-translation" href="https://w3source.org/it/articles/is-there-an-exists-function-for-jquery/">Italiano</a></div>
+  </div>
+
+
+    
+    
+    
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    
+  </div>
+</div>
+<article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title">jQuery에 &#39;exists&#39; 기능이 있습니까? (HTML 요소가 존재합니까?)
+</h1>
+  </div>
+  <div class="card-body"><div class="post-meta">
+  <span class="post-date" title="에 만든 2022-03-03 00:00:00 -0300 -03.">
+    2022년 03월 03일
+  </span><span class="post-reading-time">
+    2분 읽기
+  </span><span class="post-taxonomies"></span>
+</div>
+<div class="post-content mb-3"><p>많은 사용자가 jQuery를 사용하여 HTML DOM에 요소가 있는지 확인하는 방법에 대해 의구심을 가지고 있습니다. 간단히 말해서, 가능한 가장 간단한 방법으로 페이지에 요소가 있는지 확인하는 방법은 무엇입니까?</p>
+<p>이 결과를 얻기 위해 사용할 수 있는 몇 가지 방법이 있습니다. 그 중 하나는 요소 선택의 &ldquo;길이&rdquo; 속성이 0보다 큰 숫자를 반환하는지 확인하는 것입니다.</p>
+<p>예를 들어 아래에 표시된 것과 유사한 HTML이 있는 경우.</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln"> 1</span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="ln"> 2</span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="ln"> 3</span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="ln"> 4</span>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Lorem ipsum dolor<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="ln"> 5</span>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+<span class="ln"> 6</span><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="ln"> 7</span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="ln"> 8</span>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;myDiv&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet.<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="ln"> 9</span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="ln">10</span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div><p>그리고 &ldquo;myDiv&rdquo; 요소가 DOM에 있는지 확인하고 싶습니다. 즉, 페이지에서 다음 코드를 사용할 수 있습니다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#myDiv&#34;</span><span class="p">).</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<span class="ln">2</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;The element exists!&#34;</span><span class="p">);</span>
+<span class="ln">3</span><span class="p">}</span>
+</code></pre></div><h2 id="코드-단순화">코드 단순화<a class="anchor ms-1" href="#코드-단순화"><i class="fas fa-link"></i></a></h2>
+<p>JavaScript의 많은 것들이 true 또는 false이므로 &ldquo;length&rdquo; 속성의 반환도 true 또는 false로 간주될 수 있습니다. 반환값은 숫자이고 0은 &ldquo;거짓&quot;을 나타내고 나머지는 모두 &ldquo;참&quot;을 나타냅니다.</p>
+<p>따라서 다음과 같이 코드를 단순화할 수 있습니다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#myDiv&#34;</span><span class="p">).</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+<span class="ln">2</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;The element exists!&#34;</span><span class="p">);</span>
+<span class="ln">3</span><span class="p">}</span>
+</code></pre></div><p>비교 &ldquo;&gt; 0&quot;을 제거해도 반환 값은 동일하게 유지됩니다.</p>
+<h2 id="jquery를-위한-exists-함수-만들기">jQuery를 위한 &ldquo;exists&rdquo; 함수 만들기<a class="anchor ms-1" href="#jquery를-위한-exists-함수-만들기"><i class="fas fa-link"></i></a></h2>
+<p>조금 더 나아가 &ldquo;exists&quot;라는 함수를 추가할 수 있습니다. 이 함수는 우리가 확인하고자 하는 요소에 직접 사용할 수 있습니다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="nx">jQuery</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">exists</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">2</span>    <span class="k">return</span> <span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">);</span>
+<span class="ln">3</span><span class="p">}</span>
+<span class="ln">4</span>
+<span class="ln">5</span><span class="kd">var</span> <span class="nx">elementExists</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#myDiv&#34;</span><span class="p">).</span><span class="nx">exists</span><span class="p">();</span>
+<span class="ln">6</span>
+<span class="ln">7</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">elementExists</span><span class="p">);</span>
+</code></pre></div><p>우리는 훨씬 더 개선할 수 있고 방법이 연쇄 가능성을 나타내는 것을 방지할 수 있습니다. 이 경우에는 불가능합니다. 우리는 다음과 같이 할 것입니다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="nx">jQuery</span><span class="p">.</span><span class="nx">exists</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">selector</span><span class="p">)</span> <span class="p">{</span>
+<span class="ln">2</span>    <span class="k">return</span> <span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="nx">selector</span><span class="p">).</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">);</span>
+<span class="ln">3</span><span class="p">}</span>
+<span class="ln">4</span>
+<span class="ln">5</span><span class="k">if</span> <span class="p">(</span> <span class="nx">$</span><span class="p">.</span><span class="nx">exists</span><span class="p">(</span><span class="s2">&#34;#myDiv&#34;</span><span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+<span class="ln">6</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;The element exists!&#34;</span><span class="p">);</span>
+<span class="ln">7</span><span class="p">}</span>
+</code></pre></div><p>이제 객체에서 직접 체인을 시뮬레이션하는 대신 선택기를 &ldquo;exists&rdquo; 함수에 대한 인수로 전달합니다.</p>
+<h2 id="배열을-사용하여-html-요소의-존재-확인">배열을 사용하여 HTML 요소의 존재 확인<a class="anchor ms-1" href="#배열을-사용하여-html-요소의-존재-확인"><i class="fas fa-link"></i></a></h2>
+<p>jQuery에서 선택기를 사용하면 요소 배열을 반환합니다. 이 배열의 첫 번째 요소에 액세스하려고 시도하고 &ldquo;정의되지 않음&quot;을 반환하면 해당 요소가 DOM에 존재하지 않음을 나타냅니다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="k">if</span> <span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myDiv&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span> <span class="p">{</span>
+<span class="ln">2</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;The element exists!&#34;</span><span class="p">);</span>
+<span class="ln">3</span><span class="p">}</span>
+</code></pre></div><p>보시다시피 페이지에 HTML 요소가 있는지 확인하는 방법에는 여러 가지가 있습니다. 최고는 무엇입니까? 글쎄, 당신의 문제를 해결하는 사람. 중요한 것은 코드가 실행되고 작동한다는 것입니다.</p>
+</div><div class="post-meta mt-50">
+  <span class="post-taxonomies"><a href="/ko/tags/javascript/" class="badge post-taxonomy">JavaScript</a><a href="/ko/tags/jquery/" class="badge post-taxonomy">jQuery</a></span>
+</div></div>
+  <div class="card-footer"><div class="post-navs d-flex justify-content-evenly">
+  <div class="post-nav post-prev"><i class="fas fa-fw fa-chevron-left"></i>
+    <a href="https://w3source.org/ko/articles/javascript-hasownproperty/">JavaScript의 hasOwnProperty 메서드를 사용하는 방법 알아보기
+</a>
+  </div></div></div>
+</article><section class="related-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">관련 게시물</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="https://w3source.org/ko/articles/javascript-hasownproperty/">JavaScript의 hasOwnProperty 메서드를 사용하는 방법 알아보기
+</a>
+          <span class="float-end post-date">2022년 02월 25일
+</span>
+        </li></ul>
+    </div>
+  </section></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container d-flex flex-column">
+    
+    <div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">내용물</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#코드-단순화">코드 단순화</a></li>
+    <li><a href="#jquery를-위한-exists-함수-만들기">jQuery를 위한 &ldquo;exists&rdquo; 함수 만들기</a></li>
+    <li><a href="#배열을-사용하여-html-요소의-존재-확인">배열을 사용하여 HTML 요소의 존재 확인</a></li>
+  </ul>
+</nav>
+  </div>
+</div><section class="recent-posts row card component">
+  <div class="card-header">
+    <h2 class="card-title">최근 게시물</h2>
+  </div>
+  <div class="card-body">
+    <ul class="post-list"><li>
+        <a href="https://w3source.org/ko/articles/is-there-an-exists-function-for-jquery/">jQuery에 &#39;exists&#39; 기능이 있습니까? (HTML 요소가 존재합니까?)
+</a>
+      </li><li>
+        <a href="https://w3source.org/ko/articles/javascript-hasownproperty/">JavaScript의 hasOwnProperty 메서드를 사용하는 방법 알아보기
+</a>
+      </li></ul>
+  </div>
+</section><section class="tags-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="https://w3source.org/ko/tags">태그</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="https://w3source.org/ko/tags/javascript/" class="badge rounded post-taxonomy" title="JavaScript">
+            JavaScript<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://w3source.org/ko/tags/jquery/" class="badge rounded post-taxonomy" title="jQuery">
+            jQuery<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section>
+    
+  </div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><ul class="nav justify-content-center footer-memu mb-3"><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/about/" target="_blank" rel="noopener noreferrer">회사 소개
+</a>
+    </li></li><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/terms/" target="_blank" rel="noopener noreferrer">이용약관
+</a>
+    </li></li><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/privacy-policy/" target="_blank" rel="noopener noreferrer">개인 정보 정책
+</a>
+    </li></li><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/cookie-policy/" target="_blank" rel="noopener noreferrer">쿠키 정책
+</a>
+    </li></li><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener noreferrer">계열사 공개
+</a>
+    </li></li></ul><nav class="social-links nav justify-content-center mb-2"></nav>
+<small class="copyright mb-2">
+  Copyright © 2021-2022 W3Empire. All Rights Reserved.
+</small></footer>
+<script src="https://w3source.org/js/main.98d295a254794fd6905065bde62c9a66bff9496bbc970308fa83eac58ea1e334.js" defer></script><script src="https://w3source.org/js/icons.min.a35670f2f90c398e5ee5c8e509b428fae75aa2746854cee10b60794633076859.js" integrity="sha256-o1Zw8vkMOY5e5cjlCbQo&#43;udaonRoVM7hC2B5RjMHaFk=" crossorigin="anonymous" defer></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('https:\/\/w3source.org\/service-worker.js').then(function(reg) {
+      console.log('Successfully registered service worker', reg);
+    }).catch(function(err) {
+      console.warn('Error whilst registering service worker', err);
+    });
+  });
+}
+</script><script src="https://w3source.org/js/viewer.min.33f769b3bb2415045aecd0ae9bc8196997beaaabf70c9f8bf301d28851d95740.js" integrity="sha256-M/dps7skFQRa7NCum8gZaZe&#43;qqv3DJ&#43;L8wHSiFHZV0A=" crossorigin="anonymous" defer></script>
+</body>
+</html>

@@ -2,426 +2,532 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/ru/</loc>
-    <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    <loc>https://w3source.org/ru/</loc>
+    <lastmod>2022-03-03T00:00:00-03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://w3source.org/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/pt-br/"
+                href="https://w3source.org/pt-br/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/es/"
+                href="https://w3source.org/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/"
+                href="https://w3source.org/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="/ja/"
+                href="https://w3source.org/ja/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="/de/"
+                href="https://w3source.org/de/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="/ko/"
+                href="https://w3source.org/ko/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/"
+                href="https://w3source.org/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="/it/"
+                href="https://w3source.org/it/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/"
+                href="https://w3source.org/ru/"
                 />
   </url><url>
-    <loc>/ru/articles/</loc>
+    <loc>https://w3source.org/ru/articles/</loc>
+    <lastmod>2022-03-03T00:00:00-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://w3source.org/articles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://w3source.org/pt-br/articles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://w3source.org/es/articles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://w3source.org/zh-cn/articles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://w3source.org/ja/articles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://w3source.org/de/articles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://w3source.org/ko/articles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://w3source.org/fr/articles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://w3source.org/it/articles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://w3source.org/ru/articles/"
+                />
+  </url><url>
+    <loc>https://w3source.org/ru/tags/javascript/</loc>
+    <lastmod>2022-03-03T00:00:00-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://w3source.org/tags/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://w3source.org/pt-br/tags/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://w3source.org/es/tags/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://w3source.org/zh-cn/tags/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://w3source.org/ja/tags/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://w3source.org/de/tags/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://w3source.org/ko/tags/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://w3source.org/fr/tags/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://w3source.org/it/tags/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://w3source.org/ru/tags/javascript/"
+                />
+  </url><url>
+    <loc>https://w3source.org/ru/tags/jquery/</loc>
+    <lastmod>2022-03-03T00:00:00-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://w3source.org/tags/jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://w3source.org/pt-br/tags/jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://w3source.org/es/tags/jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://w3source.org/zh-cn/tags/jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://w3source.org/ja/tags/jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://w3source.org/de/tags/jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://w3source.org/ko/tags/jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://w3source.org/fr/tags/jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://w3source.org/it/tags/jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://w3source.org/ru/tags/jquery/"
+                />
+  </url><url>
+    <loc>https://w3source.org/ru/tags/</loc>
+    <lastmod>2022-03-03T00:00:00-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://w3source.org/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://w3source.org/pt-br/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://w3source.org/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://w3source.org/zh-cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://w3source.org/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://w3source.org/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://w3source.org/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://w3source.org/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://w3source.org/it/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://w3source.org/ru/tags/"
+                />
+  </url><url>
+    <loc>https://w3source.org/ru/articles/is-there-an-exists-function-for-jquery/</loc>
+    <lastmod>2022-03-03T00:00:00-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://w3source.org/articles/is-there-an-exists-function-for-jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://w3source.org/pt-br/articles/is-there-an-exists-function-for-jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://w3source.org/es/articles/is-there-an-exists-function-for-jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://w3source.org/zh-cn/articles/is-there-an-exists-function-for-jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://w3source.org/ja/articles/is-there-an-exists-function-for-jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://w3source.org/de/articles/is-there-an-exists-function-for-jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://w3source.org/ko/articles/is-there-an-exists-function-for-jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://w3source.org/fr/articles/is-there-an-exists-function-for-jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://w3source.org/it/articles/is-there-an-exists-function-for-jquery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://w3source.org/ru/articles/is-there-an-exists-function-for-jquery/"
+                />
+  </url><url>
+    <loc>https://w3source.org/ru/articles/javascript-hasownproperty/</loc>
     <lastmod>2022-02-25T00:00:00-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/articles/"
+                href="https://w3source.org/articles/javascript-hasownproperty/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/pt-br/articles/"
+                href="https://w3source.org/pt-br/articles/javascript-hasownproperty/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/es/articles/"
+                href="https://w3source.org/es/articles/javascript-hasownproperty/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/articles/"
+                href="https://w3source.org/zh-cn/articles/javascript-hasownproperty/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="/ja/articles/"
+                href="https://w3source.org/ja/articles/javascript-hasownproperty/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="/de/articles/"
+                href="https://w3source.org/de/articles/javascript-hasownproperty/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="/ko/articles/"
+                href="https://w3source.org/ko/articles/javascript-hasownproperty/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/articles/"
+                href="https://w3source.org/fr/articles/javascript-hasownproperty/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="/it/articles/"
+                href="https://w3source.org/it/articles/javascript-hasownproperty/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/articles/"
+                href="https://w3source.org/ru/articles/javascript-hasownproperty/"
                 />
   </url><url>
-    <loc>/ru/tags/javascript/</loc>
-    <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    <loc>https://w3source.org/ru/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/javascript/"
+                href="https://w3source.org/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/pt-br/tags/javascript/"
+                href="https://w3source.org/pt-br/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/es/tags/javascript/"
+                href="https://w3source.org/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/tags/javascript/"
+                href="https://w3source.org/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="/ja/tags/javascript/"
+                href="https://w3source.org/ja/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="/de/tags/javascript/"
+                href="https://w3source.org/de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="/ko/tags/javascript/"
+                href="https://w3source.org/ko/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/tags/javascript/"
+                href="https://w3source.org/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="/it/tags/javascript/"
+                href="https://w3source.org/it/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/tags/javascript/"
+                href="https://w3source.org/ru/categories/"
                 />
   </url><url>
-    <loc>/ru/tags/</loc>
-    <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    <loc>https://w3source.org/ru/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://w3source.org/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/pt-br/tags/"
+                href="https://w3source.org/pt-br/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/es/tags/"
+                href="https://w3source.org/es/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/tags/"
+                href="https://w3source.org/zh-cn/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="/ja/tags/"
+                href="https://w3source.org/ja/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="/de/tags/"
+                href="https://w3source.org/de/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="/ko/tags/"
+                href="https://w3source.org/ko/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/tags/"
+                href="https://w3source.org/fr/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="/it/tags/"
+                href="https://w3source.org/it/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/tags/"
+                href="https://w3source.org/ru/series/"
                 />
   </url><url>
-    <loc>/ru/articles/javascript-hasownproperty/</loc>
-    <lastmod>2022-02-25T00:00:00-03:00</lastmod>
+    <loc>https://w3source.org/ru/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/articles/javascript-hasownproperty/"
+                href="https://w3source.org/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/pt-br/articles/javascript-hasownproperty/"
+                href="https://w3source.org/pt-br/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/es/articles/javascript-hasownproperty/"
+                href="https://w3source.org/es/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/zh-cn/articles/javascript-hasownproperty/"
+                href="https://w3source.org/zh-cn/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="/ja/articles/javascript-hasownproperty/"
+                href="https://w3source.org/ja/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="/de/articles/javascript-hasownproperty/"
+                href="https://w3source.org/de/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="/ko/articles/javascript-hasownproperty/"
+                href="https://w3source.org/ko/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/articles/javascript-hasownproperty/"
+                href="https://w3source.org/fr/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="/it/articles/javascript-hasownproperty/"
+                href="https://w3source.org/it/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/articles/javascript-hasownproperty/"
-                />
-  </url><url>
-    <loc>/ru/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="/ja/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="/ko/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/fr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="/it/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/categories/"
-                />
-  </url><url>
-    <loc>/ru/series/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="/ja/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="/ko/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/fr/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="/it/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/series/"
-                />
-  </url><url>
-    <loc>/ru/search/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/zh-cn/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="/ja/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="/ko/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/fr/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="/it/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/search/"
+                href="https://w3source.org/ru/search/"
                 />
   </url>
 </urlset>

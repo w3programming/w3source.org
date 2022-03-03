@@ -2,18 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on W3Source</title>
-    <link>/de/articles/</link>
+    <link>https://w3source.org/de/articles/</link>
     <description>Recent content in Articles on W3Source</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2021-{year} W3Empire. All Rights Reserved.</copyright>
-    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 -0300</lastBuildDate><atom:link href="/de/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Mar 2022 00:00:00 -0300</lastBuildDate><atom:link href="https://w3source.org/de/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gibt es in jQuery eine &#39;exists&#39;-Funktion? (HTML-Element vorhanden?)</title>
+      <link>https://w3source.org/de/articles/is-there-an-exists-function-for-jquery/</link>
+      <pubDate>Thu, 03 Mar 2022 00:00:00 -0300</pubDate>
+      
+      <guid>https://w3source.org/de/articles/is-there-an-exists-function-for-jquery/</guid>
+      <description>Erfahren Sie, wie Sie mit jQuery auf schnellste und einfachste Weise überprüfen können, ob ein Element in der HTML-Seite vorhanden ist.</description>
+    </item>
+    
     <item>
       <title>Erfahren Sie, wie Sie die hasOwnProperty()-Methode von JavaScript verwenden</title>
-      <link>/de/articles/javascript-hasownproperty/</link>
+      <link>https://w3source.org/de/articles/javascript-hasownproperty/</link>
       <pubDate>Fri, 25 Feb 2022 00:00:00 -0300</pubDate>
       
-      <guid>/de/articles/javascript-hasownproperty/</guid>
+      <guid>https://w3source.org/de/articles/javascript-hasownproperty/</guid>
       <description>In diesem kurzen Tutorial für Anfänger lernen Sie, wie Sie die JavaScript-Methode hasOwnProperty() auf einfache und einfache Weise verwenden.</description>
     </item>
     

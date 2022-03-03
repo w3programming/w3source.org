@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript Tutorial on W3Source</title>
-    <link>/categories/javascript-tutorial/</link>
+    <link>https://w3source.org/categories/javascript-tutorial/</link>
     <description>Recent content in JavaScript Tutorial on W3Source</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Copyright © 2021-{year} W3Empire. All Rights Reserved.</copyright><atom:link href="/categories/javascript-tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2021-{year} W3Empire. All Rights Reserved.</copyright><atom:link href="https://w3source.org/categories/javascript-tutorial/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

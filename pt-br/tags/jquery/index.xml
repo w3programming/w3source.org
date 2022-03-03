@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jQuery on W3Source</title>
+    <link>https://w3source.org/pt-br/tags/jquery/</link>
+    <description>Recent content in jQuery on W3Source</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2021-{year} W3Empire. All Rights Reserved.</copyright>
+    <lastBuildDate>Thu, 03 Mar 2022 00:00:00 -0300</lastBuildDate><atom:link href="https://w3source.org/pt-br/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Existe uma função &#39;exists&#39; no jQuery? (Elemento HTML existe?)</title>
+      <link>https://w3source.org/pt-br/articles/is-there-an-exists-function-for-jquery/</link>
+      <pubDate>Thu, 03 Mar 2022 00:00:00 -0300</pubDate>
+      
+      <guid>https://w3source.org/pt-br/articles/is-there-an-exists-function-for-jquery/</guid>
+      <description>Aprenda como verificar se um elemento existe na página HTML usando o jQuery da forma mais rápida e simples possível.</description>
+    </item>
+    
+  </channel>
+</rss>

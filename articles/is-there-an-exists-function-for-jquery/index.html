@@ -12,13 +12,13 @@
 <meta name="description" content="Learn how to check if an element exists in the HTML page using jQuery in the fastest and simplest way possible." /><meta itemprop="name" content="Is there an &#39;exists&#39; function in jQuery? (HTML element exists?)">
 <meta itemprop="description" content="Learn how to check if an element exists in the HTML page using jQuery in the fastest and simplest way possible."><meta itemprop="datePublished" content="2022-03-03T00:00:00-03:00" />
 <meta itemprop="dateModified" content="2022-03-03T00:00:00-03:00" />
-<meta itemprop="wordCount" content="426">
+<meta itemprop="wordCount" content="427">
 <meta itemprop="keywords" content="JavaScript,jQuery," /><meta property="og:title" content="Is there an &#39;exists&#39; function in jQuery? (HTML element exists?)" />
 <meta property="og:description" content="Learn how to check if an element exists in the HTML page using jQuery in the fastest and simplest way possible." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://w3source.org/articles/is-there-an-exists-function-for-jquery/" /><meta property="article:section" content="articles" />
 <meta property="article:published_time" content="2022-03-03T00:00:00-03:00" />
-<meta property="article:modified_time" content="2022-03-03T00:00:00-03:00" />
+<meta property="article:modified_time" content="2022-03-03T00:00:00-03:00" /><meta property="og:site_name" content="W3Source" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Is there an &#39;exists&#39; function in jQuery? (HTML element exists?)"/>
@@ -42,7 +42,7 @@
     <button class="navbar-toggler" type="button" id="toggle-menu" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
-    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="https://w3source.org/"><img class="logo zoom-in-img" alt="Logo" src="https://w3source.org/images/w3source.jpg" loading="lazy"  width="500" height="500"   />Source.Org
+    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="https://w3source.org/"><img class="logo zoom-in-img" alt="Logo" src="https://w3source.org/images/w3source.jpg" loading="lazy"  />Source.Org
     </a>
     <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
   <div class="offcanvas-header">
@@ -193,11 +193,11 @@
   <span class="post-date" title="created on 2022-03-03 00:00:00 -0300 -03.">
     Mar 3, 2022
   </span><span class="post-reading-time">
-    2 min read
+    3 min read
   </span><span class="post-taxonomies"></span>
 </div>
 <div class="post-content mb-3"><p>Many users have doubts about how to check if an element exists in the HTML DOM using jQuery. In a nutshell, how to check if an element exists on the page in the simplest way possible?</p>
-<p>There are several ways we can use to achieve this result. One of them is to check if the “length” property of the element selector returns a number greater than 0.</p>
+<p>There are several ways to achieve this result. One of them is to check if the “length” property of the element returns a number greater than 0.</p>
 <p>For example, if we have HTML similar to the one shown below.</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln"> 1</span><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="ln"> 2</span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
@@ -209,7 +209,7 @@
 <span class="ln"> 8</span>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;myDiv&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet.<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="ln"> 9</span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="ln">10</span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div><p>And we want to check if the element “myDiv” exists in the DOM, i.e. on the page we can use the following code.</p>
+</code></pre></div><p>And we want to check if the element “myDiv” exists in the DOM (i.e. on the page), so for that, we can use the following code.</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#myDiv&#34;</span><span class="p">).</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
 <span class="ln">2</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;The element exists!&#34;</span><span class="p">);</span>
 <span class="ln">3</span><span class="p">}</span>
@@ -238,7 +238,7 @@
 <span class="ln">6</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;The element exists!&#34;</span><span class="p">);</span>
 <span class="ln">7</span><span class="p">}</span>
 </code></pre></div><p>Notice that now we pass the selector as an argument to the “exists” function, instead of simulating a chain directly from the object.</p>
-<h2 id="checking-the-existence-of-an-html-element-using-array">Checking the existence of an HTML element using array<a class="anchor ms-1" href="#checking-the-existence-of-an-html-element-using-array"><i class="fas fa-link"></i></a></h2>
+<h2 id="checking-the-existence-of-an-html-element-using-the-array-syntax">Checking the existence of an HTML element using the array syntax<a class="anchor ms-1" href="#checking-the-existence-of-an-html-element-using-the-array-syntax"><i class="fas fa-link"></i></a></h2>
 <p>When we use a selector in jQuery, it returns an array of elements. If we try to access the first element of this array and it returns “undefined”, it indicates that the element in question does not exist in the DOM.</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="k">if</span> <span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myDiv&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span> <span class="p">{</span>
 <span class="ln">2</span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;The element exists!&#34;</span><span class="p">);</span>
@@ -251,6 +251,10 @@
   <div class="post-nav post-prev"><i class="fas fa-fw fa-chevron-left"></i>
     <a href="https://w3source.org/articles/javascript-hasownproperty/">Learn How to Use JavaScript hasOwnProperty() Method
 </a>
+  </div><div class="post-nav post-next">
+    <a href="https://w3source.org/articles/javascript-equivalent-to-jquery-empty/">Vanilla JavaScript Code Equivalent to jQuery.empty()
+</a>
+    <i class="fas fa-fw fa-chevron-right"></i>
   </div></div></div>
 </article><section class="related-posts row card component">
     <div class="card-header">
@@ -277,7 +281,7 @@
   <ul>
     <li><a href="#simplifying-the-code">Simplifying the code</a></li>
     <li><a href="#creating-an-exists-function-for-jquery">Creating an “exists” function for jQuery</a></li>
-    <li><a href="#checking-the-existence-of-an-html-element-using-array">Checking the existence of an HTML element using array</a></li>
+    <li><a href="#checking-the-existence-of-an-html-element-using-the-array-syntax">Checking the existence of an HTML element using the array syntax</a></li>
   </ul>
 </nav>
   </div>
@@ -287,6 +291,9 @@
   </div>
   <div class="card-body">
     <ul class="post-list"><li>
+        <a href="https://w3source.org/articles/javascript-equivalent-to-jquery-empty/">Vanilla JavaScript Code Equivalent to jQuery.empty()
+</a>
+      </li><li>
         <a href="https://w3source.org/articles/is-there-an-exists-function-for-jquery/">Is there an &#39;exists&#39; function in jQuery? (HTML element exists?)
 </a>
       </li><li>
@@ -302,8 +309,8 @@
       </div>
       <div class="card-body">
         <div class="py-2"><a href="https://w3source.org/tags/javascript/" class="badge rounded post-taxonomy" title="JavaScript">
-            JavaScript<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://w3source.org/tags/jquery/" class="badge rounded post-taxonomy" title="jQuery">
-            jQuery<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+            JavaScript<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="https://w3source.org/tags/jquery/" class="badge rounded post-taxonomy" title="jQuery">
+            jQuery<span class="badge badge-sm text-white bg-accent ms-1">2</span></a></div>
       </div>
     </section>
     

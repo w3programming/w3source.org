@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://w3source.org/zh-cn/</loc>
-    <lastmod>2022-03-03T00:00:00-03:00</lastmod>
+    <lastmod>2022-03-05T00:00:00-03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -57,7 +57,7 @@
                 />
   </url><url>
     <loc>https://w3source.org/zh-cn/articles/</loc>
-    <lastmod>2022-03-03T00:00:00-03:00</lastmod>
+    <lastmod>2022-03-05T00:00:00-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -110,7 +110,7 @@
                 />
   </url><url>
     <loc>https://w3source.org/zh-cn/tags/javascript/</loc>
-    <lastmod>2022-03-03T00:00:00-03:00</lastmod>
+    <lastmod>2022-03-05T00:00:00-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -163,7 +163,7 @@
                 />
   </url><url>
     <loc>https://w3source.org/zh-cn/tags/jquery/</loc>
-    <lastmod>2022-03-03T00:00:00-03:00</lastmod>
+    <lastmod>2022-03-05T00:00:00-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -213,6 +213,112 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://w3source.org/zh-cn/tags/jquery/"
+                />
+  </url><url>
+    <loc>https://w3source.org/zh-cn/tags/</loc>
+    <lastmod>2022-03-05T00:00:00-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://w3source.org/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://w3source.org/pt-br/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://w3source.org/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://w3source.org/ru/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://w3source.org/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://w3source.org/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://w3source.org/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://w3source.org/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://w3source.org/it/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://w3source.org/zh-cn/tags/"
+                />
+  </url><url>
+    <loc>https://w3source.org/zh-cn/articles/javascript-equivalent-to-jquery-empty/</loc>
+    <lastmod>2022-03-05T00:00:00-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://w3source.org/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://w3source.org/pt-br/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://w3source.org/es/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://w3source.org/ru/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://w3source.org/ja/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://w3source.org/de/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://w3source.org/ko/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://w3source.org/fr/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://w3source.org/it/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://w3source.org/zh-cn/articles/javascript-equivalent-to-jquery-empty/"
                 />
   </url><url>
     <loc>https://w3source.org/zh-cn/articles/is-there-an-exists-function-for-jquery/</loc>
@@ -266,59 +372,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://w3source.org/zh-cn/articles/is-there-an-exists-function-for-jquery/"
-                />
-  </url><url>
-    <loc>https://w3source.org/zh-cn/tags/</loc>
-    <lastmod>2022-03-03T00:00:00-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://w3source.org/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://w3source.org/pt-br/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://w3source.org/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://w3source.org/ru/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://w3source.org/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://w3source.org/de/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://w3source.org/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://w3source.org/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://w3source.org/it/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://w3source.org/zh-cn/tags/"
                 />
   </url><url>
     <loc>https://w3source.org/zh-cn/articles/javascript-hasownproperty/</loc>

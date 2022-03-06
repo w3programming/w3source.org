@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2021-{year} W3Empire. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 03 Mar 2022 00:00:00 -0300</lastBuildDate><atom:link href="https://w3source.org/fr/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Mar 2022 00:00:00 -0300</lastBuildDate><atom:link href="https://w3source.org/fr/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code JavaScript vanille équivalent à jQuery.empty()</title>
+      <link>https://w3source.org/fr/articles/javascript-equivalent-to-jquery-empty/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 -0300</pubDate>
+      
+      <guid>https://w3source.org/fr/articles/javascript-equivalent-to-jquery-empty/</guid>
+      <description>Apprenez à utiliser le code JavaScript vanille pour supprimer tous les éléments enfants d&amp;rsquo;un nœud DOM.</description>
+    </item>
+    
     <item>
       <title>Existe-t-il une fonction &#39;exists&#39; dans jQuery ? (L&#39;élément HTML existe-t-il ?)</title>
       <link>https://w3source.org/fr/articles/is-there-an-exists-function-for-jquery/</link>

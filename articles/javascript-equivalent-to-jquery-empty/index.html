@@ -171,7 +171,7 @@
       title="Translations">
       <i class="fas fa-fw fa-language"></i>
     </a>
-    <div class="dropdown-menu"><a class="dropdown-item post-translation" href="https://w3source.org/pt-br/articles/javascript-equivalent-to-jquery-empty/">Português (Brasil)</a></div>
+    <div class="dropdown-menu"><a class="dropdown-item post-translation" href="https://w3source.org/pt-br/articles/javascript-equivalent-to-jquery-empty/">Português (Brasil)</a><a class="dropdown-item post-translation" href="https://w3source.org/es/articles/javascript-equivalent-to-jquery-empty/">Español</a><a class="dropdown-item post-translation" href="https://w3source.org/zh-cn/articles/javascript-equivalent-to-jquery-empty/">中文</a><a class="dropdown-item post-translation" href="https://w3source.org/ru/articles/javascript-equivalent-to-jquery-empty/">Pусский</a><a class="dropdown-item post-translation" href="https://w3source.org/ja/articles/javascript-equivalent-to-jquery-empty/">日本語</a><a class="dropdown-item post-translation" href="https://w3source.org/de/articles/javascript-equivalent-to-jquery-empty/">Deutsch</a><a class="dropdown-item post-translation" href="https://w3source.org/ko/articles/javascript-equivalent-to-jquery-empty/">한국어</a><a class="dropdown-item post-translation" href="https://w3source.org/fr/articles/javascript-equivalent-to-jquery-empty/">Français</a><a class="dropdown-item post-translation" href="https://w3source.org/it/articles/javascript-equivalent-to-jquery-empty/">Italiano</a></div>
   </div>
 
 
@@ -259,7 +259,7 @@
 <span class="ln">3</span>    <span class="nx">element</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">lastChild</span><span class="p">);</span>
 <span class="ln">4</span><span class="p">}</span>
 </code></pre></div><h2 id="remove-child-elements-using-a-loop-lastelementchild">Remove child elements using a loop (&ldquo;lastElementChild&rdquo;)<a class="anchor ms-1" href="#remove-child-elements-using-a-loop-lastelementchild"><i class="fas fa-link"></i></a></h2>
-<p>Here we will achieve the same result, but preserving “non-Elements” such as text nodes “#text” and comments “&lt;!– comments –&gt;”.</p>
+<p>Here we will achieve the same result, but preserving “non-Elements” such as text nodes “#text” and comments “&lt;!&ndash; comments &ndash;&gt;”.</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kr">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;myDiv&#34;</span><span class="p">);</span>
 <span class="ln">2</span><span class="k">while</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">)</span> <span class="p">{</span>
 <span class="ln">3</span>    <span class="nx">element</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">lastElementChild</span><span class="p">);</span>
@@ -281,12 +281,8 @@
 <span class="ln">2</span><span class="k">while</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">)</span> <span class="p">{</span>
 <span class="ln">3</span>    <span class="nx">element</span><span class="p">.</span><span class="nx">lastChild</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
 <span class="ln">4</span><span class="p">}</span>
-</code></pre></div><p><div style="text-align: center; margin: 40px 0;"><img class="img-fluid zoom-in-img" alt="" src="https://w3source.org/images/articles/javascript-equivalent-to-jquery-empty-20220306175109.png" loading="lazy"  /></div>
-</p>
-<p>The “remove” function was added in ES5. It has a simpler and more direct chaining syntax. It already has <a href="https://caniuse.com/childnode-remove" target="_blank" rel="noopener noreferrer">excellent support in many browsers</a>
+</code></pre></div><p>The “remove” function was added in ES5. It has a simpler and more direct chaining syntax. It already has <a href="https://caniuse.com/childnode-remove" target="_blank" rel="noopener noreferrer">excellent support in many browsers</a>
 .</p>
-<p><div style="text-align: center; margin: 40px 0;"><img class="img-fluid zoom-in-img" alt="" src="https://w3source.org/images/articles/javascript-equivalent-to-jquery-empty-20220306180117.png" loading="lazy"  /></div>
-</p>
 <h2 id="remove-elements-with-the-replacechildren-method">Remove elements with the “replaceChildren” method<a class="anchor ms-1" href="#remove-elements-with-the-replacechildren-method"><i class="fas fa-link"></i></a></h2>
 <p>There is also the possibility to remove child elements from a DOM node using the “replaceChildren” API. This method allows you not only to remove elements from within a parent element but also to replace them with other elements in just one operation.</p>
 <p>To just remove the child elements, call the API without any arguments.</p>

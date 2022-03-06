@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2021-{year} W3Empire. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 03 Mar 2022 00:00:00 -0300</lastBuildDate><atom:link href="https://w3source.org/ru/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Mar 2022 00:00:00 -0300</lastBuildDate><atom:link href="https://w3source.org/ru/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ванильный код JavaScript, эквивалентный jQuery.empty()</title>
+      <link>https://w3source.org/ru/articles/javascript-equivalent-to-jquery-empty/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 -0300</pubDate>
+      
+      <guid>https://w3source.org/ru/articles/javascript-equivalent-to-jquery-empty/</guid>
+      <description>Научитесь использовать ванильный код JavaScript для удаления всех дочерних элементов из узла DOM.</description>
+    </item>
+    
     <item>
       <title>Есть ли функция «exists» в jQuery? (элемент HTML существует?)</title>
       <link>https://w3source.org/ru/articles/is-there-an-exists-function-for-jquery/</link>

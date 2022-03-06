@@ -1,0 +1,406 @@
+<!doctype html><html lang="ko" data-palette="green"
+  >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery.empty()와 동일한 바닐라 JavaScript 코드 | W3Source</title><link rel="apple-touch-icon" href="https://w3source.org/images/icons/icon-180x180.png" sizes="180x180">
+<link rel="icon" href="https://w3source.org/images/icons/icon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://w3source.org/images/icons/icon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://w3source.org/images/icons/favicon.ico">
+<link rel="manifest" href="https://w3source.org/ko/manifest.json">
+<meta name="keywords" content="" />
+<meta name="description" content="바닐라 JavaScript 코드를 사용하여 DOM 노드에서 모든 자식 요소를 제거하는 방법을 배웁니다." /><meta itemprop="name" content="jQuery.empty()와 동일한 바닐라 JavaScript 코드">
+<meta itemprop="description" content="바닐라 JavaScript 코드를 사용하여 DOM 노드에서 모든 자식 요소를 제거하는 방법을 배웁니다."><meta itemprop="datePublished" content="2022-03-05T00:00:00-03:00" />
+<meta itemprop="dateModified" content="2022-03-05T00:00:00-03:00" />
+<meta itemprop="wordCount" content="1355">
+<meta itemprop="keywords" content="JavaScript,jQuery," /><meta property="og:title" content="jQuery.empty()와 동일한 바닐라 JavaScript 코드" />
+<meta property="og:description" content="바닐라 JavaScript 코드를 사용하여 DOM 노드에서 모든 자식 요소를 제거하는 방법을 배웁니다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://w3source.org/ko/articles/javascript-equivalent-to-jquery-empty/" /><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2022-03-05T00:00:00-03:00" />
+<meta property="article:modified_time" content="2022-03-05T00:00:00-03:00" /><meta property="og:site_name" content="W3Source" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="jQuery.empty()와 동일한 바닐라 JavaScript 코드"/>
+<meta name="twitter:description" content="바닐라 JavaScript 코드를 사용하여 DOM 노드에서 모든 자식 요소를 제거하는 방법을 배웁니다."/>
+<meta name="robots" content="index, follow" /><link rel="stylesheet" href="https://w3source.org/css/main.min.e453dee5d645e97cbcdaf83860822aac69b2e4c130f3f01f9c12eec700ed562c.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&#43;Mono&amp;family=Roboto:wght@400;700&amp;display=swap" crossorigin="anonymous"><link rel="stylesheet" href="https://w3source.org/css/viewer.min.3d228794bcedbbfa0412beb8fbc1ec6973202945e42af7004f742a4d7bd620ab.css" integrity="sha256-PSKHlLztu/oEEr64&#43;8HsaXMgKUXkKvcAT3QqTXvWIKs=" crossorigin="anonymous">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BWDXMYHME"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    
+    gtag('config', 'G-1BWDXMYHME');
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script></head>
+  <body><script>const items=['mode','palette'];items.forEach(function(a){const b=localStorage.getItem('hbs-'+a);b&&document.body.parentElement.setAttribute('data-'+a,b)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" id="toggle-menu" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="https://w3source.org/ko/"><img class="logo zoom-in-img" alt="Logo" src="https://w3source.org/images/w3source.jpg" loading="lazy"  />Source.Org
+    </a>
+    <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Share</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
+      target="_blank" href="https://twitter.com/intent/tweet?title=jQuery.empty%28%29%ec%99%80%20%eb%8f%99%ec%9d%bc%ed%95%9c%20%eb%b0%94%eb%8b%90%eb%9d%bc%20JavaScript%20%ec%bd%94%eb%93%9c&url=https%3a%2f%2fw3source.org%2fko%2farticles%2fjavascript-equivalent-to-jquery-empty%2f">
+      <i class="fab fa-fw fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fw3source.org%2fko%2farticles%2fjavascript-equivalent-to-jquery-empty%2f">
+      <i class="fab fa-fw fa-facebook-f"></i> Facebook
+    </a>
+  </div>
+</div>
+    <button class="navbar-settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
+  aria-controls="offcanvasSettings" aria-label="Toggle settings">
+  <i class="fas fa-ellipsis-v"></i>
+</button>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSettings">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">설정</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column"><section class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-language"></i> 언어</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="dropdown">
+        <a class="btn btn-sm btn-outline-primary dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          한국어
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown"><li><a class="dropdown-item" href="https://w3source.org/">English</a></li><li><a class="dropdown-item" href="https://w3source.org/pt-br/">Português (Brasil)</a></li><li><a class="dropdown-item" href="https://w3source.org/es/">Español</a></li><li><a class="dropdown-item" href="https://w3source.org/zh-cn/">中文</a></li><li><a class="dropdown-item" href="https://w3source.org/ru/">Pусский</a></li><li><a class="dropdown-item" href="https://w3source.org/ja/">日本語</a></li><li><a class="dropdown-item" href="https://w3source.org/de/">Deutsch</a></li><li><a class="dropdown-item" href="https://w3source.org/fr/">Français</a></li><li><a class="dropdown-item" href="https://w3source.org/it/">Italiano</a></li></ul>
+      </div>
+    </div>
+  </form>
+</section>
+
+
+<section class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-adjust"></i> 방법</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="modeSwitcher">
+      </div>
+    </div>
+  </form>
+</section>
+
+<section class="setting">
+  <form class="font-size-switcher-form row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> 글꼴 크기</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+    </div>
+  </form>
+</section>
+
+
+
+<section class="setting actions d-flex justify-content-around mt-auto overflow-auto">
+  <a role="button" class="action action-go-back" href="javascript: window.history.back();">
+    <span class="action-icon"><i class="fas fa-2x fa-arrow-left"></i></span> 돌아가기
+  </a>
+  <a role="button" class="action action-reload-page">
+    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> 새로고침
+  </a>
+  <a role="button" class="action action-copy-url">
+    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> URL 복사
+  </a><a class="action action-social-share" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSocialShare"
+    aria-controls="offcanvasSocialShare" aria-label="Toggle social share">
+    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> 공유하다
+  </a></section>
+
+</div>
+</div>
+
+    <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent" onclick="event.stopPropagation()">
+      <form class="search-bar my-1" action="https://w3source.org/ko/search">
+    <div class="input-group input-group-sm">
+        <span class="btn btn-search disabled position-absolute left-0">
+            <i class="fas fa-fw fa-search"></i>
+        </span>
+        <input class="form-control rounded-pill" name="q" type="search" aria-label="Search" placeholder="입력하고 &#39;Enter&#39;를 눌러 검색...">
+    </div>
+</form>
+      <ul class="navbar-nav ms-auto"></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body">
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="https://w3source.org/ko/">홈페이지</a></li><li class="breadcrumb-item"><a href="https://w3source.org/ko/articles/">Articles</a></li><li class="breadcrumb-item active">jQuery.empty()와 동일한 바닐라 JavaScript 코드</li></ol>
+  </div>
+</nav><div class="post-panel-wrapper">
+  <div class="d-flex flex-column component rounded post-panel">
+    
+    <a class="action action-panel-toggler" role="button" title="Panel toggler">
+      <i class="fas fa-fw fa-chevron-circle-down"></i>
+    </a>
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+  <div class="post-translations nav-item dropdown dropstart action">
+    <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" aria-label="Translations dropdown menu"
+      title="Translations">
+      <i class="fas fa-fw fa-language"></i>
+    </a>
+    <div class="dropdown-menu"><a class="dropdown-item post-translation" href="https://w3source.org/articles/javascript-equivalent-to-jquery-empty/">English</a><a class="dropdown-item post-translation" href="https://w3source.org/pt-br/articles/javascript-equivalent-to-jquery-empty/">Português (Brasil)</a><a class="dropdown-item post-translation" href="https://w3source.org/es/articles/javascript-equivalent-to-jquery-empty/">Español</a><a class="dropdown-item post-translation" href="https://w3source.org/zh-cn/articles/javascript-equivalent-to-jquery-empty/">中文</a><a class="dropdown-item post-translation" href="https://w3source.org/ru/articles/javascript-equivalent-to-jquery-empty/">Pусский</a><a class="dropdown-item post-translation" href="https://w3source.org/ja/articles/javascript-equivalent-to-jquery-empty/">日本語</a><a class="dropdown-item post-translation" href="https://w3source.org/de/articles/javascript-equivalent-to-jquery-empty/">Deutsch</a><a class="dropdown-item post-translation" href="https://w3source.org/fr/articles/javascript-equivalent-to-jquery-empty/">Français</a><a class="dropdown-item post-translation" href="https://w3source.org/it/articles/javascript-equivalent-to-jquery-empty/">Italiano</a></div>
+  </div>
+
+
+    
+    
+    
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    
+  </div>
+</div>
+<article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title">jQuery.empty()와 동일한 바닐라 JavaScript 코드
+</h1>
+  </div>
+  <div class="card-body"><div class="post-meta">
+  <span class="post-date" title="에 만든 2022-03-05 00:00:00 -0300 -03.">
+    2022년 03월 05일
+  </span><span class="post-reading-time">
+    3분 읽기
+  </span><span class="post-taxonomies"></span>
+</div>
+<div class="post-content mb-3"><p>jQuery에는 다른 요소 내부의 자식 요소만 제거하는 기능이 있습니다. &ldquo;empty()&rdquo; 메서드는 객체에서 직접 사용할 수 있습니다.</p>
+<p>아래 HTML 코드를 고려하십시오.</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln"> 1</span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="ln"> 2</span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="ln"> 3</span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="ln"> 4</span>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="ln"> 5</span><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="ln"> 6</span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="ln"> 7</span>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;myDiv&#34;</span><span class="p">&gt;</span>
+<span class="ln"> 8</span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>First paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="ln"> 9</span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Second paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="ln">10</span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Third paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="ln">11</span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Fourth paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="ln">12</span>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="ln">13</span>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://code.jquery.com/jquery-3.6.0.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="ln">14</span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="ln">15</span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div><p>&ldquo;myDiv&rdquo; 요소 내의 모든 단락을 제거하려면 jQuery에서 다음 코드를 사용하면 됩니다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#myDiv&#34;</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span>
+</code></pre></div><p>그러나 JavaScript만 사용하여 이 동일한 작업을 어떻게 수행할 수 있습니까?</p>
+<h2 id="javascript를-사용하여-dom-노드에서-자식-요소-제거">JavaScript를 사용하여 DOM 노드에서 자식 요소 제거<a class="anchor ms-1" href="#javascript를-사용하여-dom-노드에서-자식-요소-제거"><i class="fas fa-link"></i></a></h2>
+<p>JavaScript를 사용하면 프로그래머가 다양한 속성을 통해 DOM 노드에서 요소를 제거할 수 있습니다. 각각을 사용하여 이 제거를 수행하는 방법을 알아보겠습니다.</p>
+<h3 id="innerhtml">innerHTML<a class="anchor ms-1" href="#innerhtml"><i class="fas fa-link"></i></a></h3>
+<p>이러한 속성 중 하나는 &ldquo;innerHTML&quot;입니다. 요소의 모든 내부 HTML을 대체할 수 있습니다. 빈 문자열로 대체되는 것을 포함하여 해당 요소를 비어 있게 만듭니다.</p>
+<p>&ldquo;myDiv&rdquo; 요소 내의 모든 자식 노드를 제거하려면 다음 JavaScript를 사용하십시오.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;myDiv&#34;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</code></pre></div><p>아래에서 HTML의 전체 예를 볼 수 있습니다. 여기에서는 버튼을 사용하여 요소를 제거합니다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln"> 1</span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="ln"> 2</span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="ln"> 3</span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="ln"> 4</span>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Removing HTML elements using innerHTML<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="ln"> 5</span>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+<span class="ln"> 6</span><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="ln"> 7</span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="ln"> 8</span>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;myDiv&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;border: 3px dashed red; margin-bottom: 20px;&#34;</span><span class="p">&gt;</span>
+<span class="ln"> 9</span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>First paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="ln">10</span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Second paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="ln">11</span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Third paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="ln">12</span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Fourth paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="ln">13</span>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="ln">14</span>
+<span class="ln">15</span>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;removeElements&#39;</span><span class="p">&gt;</span>Remove paragraphs (innerHTML)<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="ln">16</span>
+<span class="ln">17</span>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="ln">18</span>        <span class="kr">const</span> <span class="nx">button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;removeElements&#34;</span><span class="p">);</span>
+<span class="ln">19</span>        <span class="nx">button</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<span class="ln">20</span>            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;myDiv&#34;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+<span class="ln">21</span>        <span class="p">};</span>
+<span class="ln">22</span>    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="ln">23</span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="ln">24</span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div><h3 id="textcontent">textContent<a class="anchor ms-1" href="#textcontent"><i class="fas fa-link"></i></a></h3>
+<p>&ldquo;textContent&rdquo; 속성은 노드 내부의 모든 요소를 ​​빈 문자열로 바꾸는 데 사용할 수 있습니다.</p>
+<p>브라우저에 따라 &ldquo;textContent&quot;를 사용하는 것이 &ldquo;innerHTML&quot;보다 성능이 더 좋을 수 있습니다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;myDiv&#34;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</code></pre></div><h2 id="루프를-사용하여-자식-요소-제거lastchild">루프를 사용하여 자식 요소 제거(&ldquo;lastChild&rdquo;)<a class="anchor ms-1" href="#루프를-사용하여-자식-요소-제거lastchild"><i class="fas fa-link"></i></a></h2>
+<p>아래 예에서 &ldquo;while&rdquo; 루프를 사용하여 요소에 첫 번째 자식이 포함되어 있는지 확인합니다. true이면 부모 요소 내부에 하나 이상의 자식 요소가 있음을 나타내므로 루프는 마지막 요소를 제거합니다. 그리고 그 과정이 반복됩니다.</p>
+<p>&ldquo;lastChild&rdquo; 속성을 사용하여 마지막 요소를 제거하는 것이 &ldquo;firstChild&rdquo; 속성을 사용하여 첫 번째 요소를 제거하는 것보다 일반적으로 더 나은 성능을 보입니다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kr">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;myDiv&#34;</span><span class="p">);</span>
+<span class="ln">2</span><span class="k">while</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">)</span> <span class="p">{</span>
+<span class="ln">3</span>    <span class="nx">element</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">lastChild</span><span class="p">);</span>
+<span class="ln">4</span><span class="p">}</span>
+</code></pre></div><h2 id="루프를-사용하여-자식-요소-제거lastelementchild">루프를 사용하여 자식 요소 제거(&ldquo;lastElementChild&rdquo;)<a class="anchor ms-1" href="#루프를-사용하여-자식-요소-제거lastelementchild"><i class="fas fa-link"></i></a></h2>
+<p>여기서 우리는 동일한 결과를 얻을 수 있지만 텍스트 노드 &ldquo;#text&rdquo; 및 주석 &ldquo;&lt;!&ndash; comments &ndash;&gt;&ldquo;와 같은 &ldquo;비 요소&quot;를 유지합니다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kr">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;myDiv&#34;</span><span class="p">);</span>
+<span class="ln">2</span><span class="k">while</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">)</span> <span class="p">{</span>
+<span class="ln">3</span>    <span class="nx">element</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">lastElementChild</span><span class="p">);</span>
+<span class="ln">4</span><span class="p">}</span>
+</code></pre></div><p>&ldquo;lastElementChild&quot;의 또 다른 기능은 직계 자손이 아닌 부모 요소 내의 자식 노드를 보존하는 것입니다.</p>
+<p>예를 들어, 아래 요소의 구조를 고려하십시오.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text"><span class="ln">1</span>Parent element
+<span class="ln">2</span>|
+<span class="ln">3</span> — First node
+<span class="ln">4</span>|  |
+<span class="ln">5</span>|   — Node 1
+<span class="ln">6</span>|  |
+<span class="ln">7</span>|   — Node 2
+<span class="ln">8</span>|
+<span class="ln">9</span> — Second node
+</code></pre></div><p>&ldquo;lastElementChild&quot;를 사용할 때 &ldquo;First node&quot;와 &ldquo;Second node&quot;가 제거됩니다. &ldquo;Node 1&rdquo; 및 &ldquo;Node 2&quot;는 제거되지 않습니다.</p>
+<h2 id="remove-메소드로-자식-요소-제거">&ldquo;remove&rdquo; 메소드로 자식 요소 제거<a class="anchor ms-1" href="#remove-메소드로-자식-요소-제거"><i class="fas fa-link"></i></a></h2>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kr">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;myDiv&#34;</span><span class="p">);</span>
+<span class="ln">2</span><span class="k">while</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">)</span> <span class="p">{</span>
+<span class="ln">3</span>    <span class="nx">element</span><span class="p">.</span><span class="nx">lastChild</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
+<span class="ln">4</span><span class="p">}</span>
+</code></pre></div><p>&ldquo;remove&rdquo; 기능이 ES5에 추가되었습니다. 더 간단하고 직접적인 연결 구문이 있습니다. 이미 <a href="https://caniuse.com/childnode-remove" target="_blank" rel="noopener noreferrer">많은 브라우저에서 뛰어난 지원을 제공합니다</a>
+ .</p>
+<h2 id="replacechildren-메소드로-요소-제거">&ldquo;replaceChildren&rdquo; 메소드로 요소 제거<a class="anchor ms-1" href="#replacechildren-메소드로-요소-제거"><i class="fas fa-link"></i></a></h2>
+<p>&ldquo;replaceChildren&rdquo; API를 사용하여 DOM 노드에서 자식 요소를 제거할 수도 있습니다. 이 방법을 사용하면 부모 요소 내에서 요소를 제거할 수 있을 뿐만 아니라 한 번의 작업으로 다른 요소로 대체할 수 있습니다.</p>
+<p>하위 요소만 제거하려면 인수 없이 API를 호출하십시오.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kr">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;myDiv&#34;</span><span class="p">);</span>
+<span class="ln">2</span><span class="nx">element</span><span class="p">.</span><span class="nx">replaceChildren</span><span class="p">();</span>
+</code></pre></div><p>&ldquo;replaceChildren&rdquo; API는 이미 <a href="https://caniuse.com/mdn-api_element_replacechildren" target="_blank" rel="noopener noreferrer">최신 브라우저에서 잘 지원됩니다</a>
+ .</p>
+</div><div class="post-meta mt-50">
+  <span class="post-taxonomies"><a href="/ko/tags/javascript/" class="badge post-taxonomy">JavaScript</a><a href="/ko/tags/jquery/" class="badge post-taxonomy">jQuery</a></span>
+</div></div>
+  <div class="card-footer"><div class="post-navs d-flex justify-content-evenly">
+  <div class="post-nav post-prev"><i class="fas fa-fw fa-chevron-left"></i>
+    <a href="https://w3source.org/ko/articles/is-there-an-exists-function-for-jquery/">jQuery에 &#39;exists&#39; 기능이 있습니까? (HTML 요소가 존재합니까?)
+</a>
+  </div></div></div>
+</article><section class="related-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">관련 게시물</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="https://w3source.org/ko/articles/is-there-an-exists-function-for-jquery/">jQuery에 &#39;exists&#39; 기능이 있습니까? (HTML 요소가 존재합니까?)
+</a>
+          <span class="float-end post-date">2022년 03월 03일
+</span>
+        </li><li>
+          <a href="https://w3source.org/ko/articles/javascript-hasownproperty/">JavaScript의 hasOwnProperty 메서드를 사용하는 방법 알아보기
+</a>
+          <span class="float-end post-date">2022년 02월 25일
+</span>
+        </li></ul>
+    </div>
+  </section></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container d-flex flex-column">
+    
+    <div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">내용물</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#javascript를-사용하여-dom-노드에서-자식-요소-제거">JavaScript를 사용하여 DOM 노드에서 자식 요소 제거</a>
+      <ul>
+        <li><a href="#innerhtml">innerHTML</a></li>
+        <li><a href="#textcontent">textContent</a></li>
+      </ul>
+    </li>
+    <li><a href="#루프를-사용하여-자식-요소-제거lastchild">루프를 사용하여 자식 요소 제거(&ldquo;lastChild&rdquo;)</a></li>
+    <li><a href="#루프를-사용하여-자식-요소-제거lastelementchild">루프를 사용하여 자식 요소 제거(&ldquo;lastElementChild&rdquo;)</a></li>
+    <li><a href="#remove-메소드로-자식-요소-제거">&ldquo;remove&rdquo; 메소드로 자식 요소 제거</a></li>
+    <li><a href="#replacechildren-메소드로-요소-제거">&ldquo;replaceChildren&rdquo; 메소드로 요소 제거</a></li>
+  </ul>
+</nav>
+  </div>
+</div><section class="recent-posts row card component">
+  <div class="card-header">
+    <h2 class="card-title">최근 게시물</h2>
+  </div>
+  <div class="card-body">
+    <ul class="post-list"><li>
+        <a href="https://w3source.org/ko/articles/javascript-equivalent-to-jquery-empty/">jQuery.empty()와 동일한 바닐라 JavaScript 코드
+</a>
+      </li><li>
+        <a href="https://w3source.org/ko/articles/is-there-an-exists-function-for-jquery/">jQuery에 &#39;exists&#39; 기능이 있습니까? (HTML 요소가 존재합니까?)
+</a>
+      </li><li>
+        <a href="https://w3source.org/ko/articles/javascript-hasownproperty/">JavaScript의 hasOwnProperty 메서드를 사용하는 방법 알아보기
+</a>
+      </li></ul>
+  </div>
+</section><section class="tags-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="https://w3source.org/ko/tags">태그</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="https://w3source.org/ko/tags/javascript/" class="badge rounded post-taxonomy" title="JavaScript">
+            JavaScript<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="https://w3source.org/ko/tags/jquery/" class="badge rounded post-taxonomy" title="jQuery">
+            jQuery<span class="badge badge-sm text-white bg-accent ms-1">2</span></a></div>
+      </div>
+    </section>
+    
+  </div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><ul class="nav justify-content-center footer-memu mb-3"><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/about/" target="_blank" rel="noopener noreferrer">회사 소개
+</a>
+    </li></li><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/terms/" target="_blank" rel="noopener noreferrer">이용약관
+</a>
+    </li></li><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/privacy-policy/" target="_blank" rel="noopener noreferrer">개인 정보 정책
+</a>
+    </li></li><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/cookie-policy/" target="_blank" rel="noopener noreferrer">쿠키 정책
+</a>
+    </li></li><li class="nav-item"><li class="nav-item">
+      <a class="nav-link" href="https://support.w3source.org/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener noreferrer">계열사 공개
+</a>
+    </li></li></ul><nav class="social-links nav justify-content-center mb-2"></nav>
+<small class="copyright mb-2">
+  Copyright © 2021-2022 W3Empire. All Rights Reserved.
+</small></footer>
+<script src="https://w3source.org/js/main.98d295a254794fd6905065bde62c9a66bff9496bbc970308fa83eac58ea1e334.js" defer></script><script src="https://w3source.org/js/icons.min.a35670f2f90c398e5ee5c8e509b428fae75aa2746854cee10b60794633076859.js" integrity="sha256-o1Zw8vkMOY5e5cjlCbQo&#43;udaonRoVM7hC2B5RjMHaFk=" crossorigin="anonymous" defer></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('https:\/\/w3source.org\/service-worker.js').then(function(reg) {
+      console.log('Successfully registered service worker', reg);
+    }).catch(function(err) {
+      console.warn('Error whilst registering service worker', err);
+    });
+  });
+}
+</script><script src="https://w3source.org/js/viewer.min.33f769b3bb2415045aecd0ae9bc8196997beaaabf70c9f8bf301d28851d95740.js" integrity="sha256-M/dps7skFQRa7NCum8gZaZe&#43;qqv3DJ&#43;L8wHSiFHZV0A=" crossorigin="anonymous" defer></script>
+</body>
+</html>

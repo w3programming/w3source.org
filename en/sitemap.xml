@@ -223,6 +223,46 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://w3source.org/es/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://w3source.org/zh-cn/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://w3source.org/ru/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://w3source.org/ja/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://w3source.org/de/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://w3source.org/ko/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://w3source.org/fr/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://w3source.org/it/articles/javascript-equivalent-to-jquery-empty/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://w3source.org/articles/javascript-equivalent-to-jquery-empty/"
                 />

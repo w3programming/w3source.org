@@ -171,7 +171,7 @@
       title="Translations">
       <i class="fas fa-fw fa-language"></i>
     </a>
-    <div class="dropdown-menu"><a class="dropdown-item post-translation" href="https://w3source.org/articles/javascript-equivalent-to-jquery-empty/">English</a></div>
+    <div class="dropdown-menu"><a class="dropdown-item post-translation" href="https://w3source.org/articles/javascript-equivalent-to-jquery-empty/">English</a><a class="dropdown-item post-translation" href="https://w3source.org/es/articles/javascript-equivalent-to-jquery-empty/">Español</a><a class="dropdown-item post-translation" href="https://w3source.org/zh-cn/articles/javascript-equivalent-to-jquery-empty/">中文</a><a class="dropdown-item post-translation" href="https://w3source.org/ru/articles/javascript-equivalent-to-jquery-empty/">Pусский</a><a class="dropdown-item post-translation" href="https://w3source.org/ja/articles/javascript-equivalent-to-jquery-empty/">日本語</a><a class="dropdown-item post-translation" href="https://w3source.org/de/articles/javascript-equivalent-to-jquery-empty/">Deutsch</a><a class="dropdown-item post-translation" href="https://w3source.org/ko/articles/javascript-equivalent-to-jquery-empty/">한국어</a><a class="dropdown-item post-translation" href="https://w3source.org/fr/articles/javascript-equivalent-to-jquery-empty/">Français</a><a class="dropdown-item post-translation" href="https://w3source.org/it/articles/javascript-equivalent-to-jquery-empty/">Italiano</a></div>
   </div>
 
 
@@ -259,7 +259,7 @@
 <span class="ln">3</span>    <span class="nx">element</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">lastChild</span><span class="p">);</span>
 <span class="ln">4</span><span class="p">}</span>
 </code></pre></div><h2 id="remover-elementos-filhos-usando-um-loop-lastelementchild">Remover elementos filhos usando um loop (&ldquo;lastElementChild&rdquo;)<a class="anchor ms-1" href="#remover-elementos-filhos-usando-um-loop-lastelementchild"><i class="fas fa-link"></i></a></h2>
-<p>Aqui nós obteremos o mesmo resultado, porém preservando &ldquo;non-Elements&rdquo; como nós de texto &ldquo;#text&rdquo; e comentários &ldquo;&lt;!– comments –&gt;&rdquo;.</p>
+<p>Aqui nós obteremos o mesmo resultado, porém preservando &ldquo;non-Elements&rdquo; como nós de texto &ldquo;#text&rdquo; e comentários &ldquo;&lt;!&ndash; comments &ndash;&gt;&rdquo;.</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="ln">1</span><span class="kr">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;myDiv&#34;</span><span class="p">);</span>
 <span class="ln">2</span><span class="k">while</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">)</span> <span class="p">{</span>
 <span class="ln">3</span>    <span class="nx">element</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">lastElementChild</span><span class="p">);</span>
